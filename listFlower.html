@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>casestudy</title>
+    <title>DR.door</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <link rel="stylesheet" href="css/import.css">
-    <script scr="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script scr="js/test.js"></script>
 </head>
 <body>
     <div id="searchPanel">
@@ -23,54 +24,54 @@
         </form>
         <div>
             <h3>Are there any categories you are looking for?</h3>
-                <ul>
-                    <li class="active">#ENTRANCE</li>
-                    <li>#SLIDING</li>
-                    <li>#SWINGING</li>
-                    <li>#HANGER</li>
-                    <li>#3INTERLOCKING</li>
-                </ul>
-            </div>
             <ul>
-                <li>
-                    <a href="modernMangipAquaDetail.html">
-                        <img src="images/thumbModern/mModern-aqua-noframe.png" alt="">
-                        Modern-aqua
-                    </a>
-                </li>
-                <li>
-                    <a href="modernBronzeDetail.html">
-                        <img src="images/thumbModern/mModern-bronze-noframe.png" alt="">
-                        Modern-bronze
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMangipDetail.html">
-                        <img src="images/thumbModern/mModern-mangip-noframe.png" alt="">
-                        Modern-mangip
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMB508Detail.html">
-                        <img src="images/thumbModern/mModern-MB508-noframe.png" alt="">
-                        Modern-MB508
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSADetail.html">
-                        <img src="images/thumbModern/mModern-MSA-noframe.png" alt="">
-                        Modern-MSA
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSFDetail.html">
-                        <img src="images/thumbModern/mModern-MSF-noframe.png" alt="">
-                        Modern-MSF
-                    </a>
-                </li>
+                <li class="active">#ENTRANCE</li>
+                <li>#SLIDING</li>
+                <li>#SWINGING</li>
+                <li>#HANGER</li>
+                <li>#3INTERLOCKING</li>
             </ul>
+        </div>
+        <ul>
+            <li>
+                <a href="modernMangipAquaDetail.html">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="">
+                    Modern-aqua
+                </a>
+            </li>
+            <li>
+                <a href="modernBronzeDetail.html">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="">
+                    Modern-bronze
+                </a>
+            </li>
+            <li>
+                <a href="detailModernMangip.html">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="">
+                    Modern-mangip
+                </a>
+            </li>
+            <li>
+                <a href="modernMB508Detail.html">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="">
+                    Modern-MB508
+                </a>
+            </li>
+            <li>
+                <a href="modernMSADetail.html">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="">
+                    Modern-MSA
+                </a>
+            </li>
+            <li>
+                <a href="modernMSFDetail.html">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="">
+                    Modern-MSF
+                </a>
+            </li>
+        </ul>
         
-       
+        
         <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
     </div>
 
@@ -78,7 +79,7 @@
         <li><a href="index_after.html">home</a></li>
         <li><a href="talktalkURL">message</a></li>
         <li><a href="files/fileName.ext">download</a></li>
-        <li>cart <span>99</span></li>
+        <li data-panel="searchPanel">cart <span>99</span></li>
     </ul>
     <!-- popup,panel 구조 -->
     <a href="#" class="btn_top">top</a>
@@ -226,7 +227,7 @@
         <ul>
             <li data-category="ENTRANCE">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MF900-noframe.png" alt="FlowerMF900">
+                    <img src="images/thumb-mFlower-MF900-noframe.png" alt="FlowerMF900">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -242,7 +243,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MD905-noframe.png" alt="FlowerMD905">
+                    <img src="images/thumb-mFlower-MD905-noframe.png" alt="FlowerMD905">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -258,7 +259,7 @@
             </li>
             <li data-category="ENTRANCE">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MD904-noframe.png" alt="FlowerMD904">
+                    <img src="images/thumb-mFlower-MD904-noframe.png" alt="FlowerMD904">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -274,7 +275,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC907-noframe.png" alt="FlowerMC907">
+                    <img src="images/thumb-mFlower-MC907-noframe.png" alt="FlowerMC907">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -290,7 +291,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure> 
-                    <img src="images/thumbFlower/mFlower-MA932-noframe.png" alt="FlowerMA932">
+                    <img src="images/thumb-mFlower-MA932-noframe.png" alt="FlowerMA932">
                     <figcaption>
                         <dl>
                             <dt>MA932</dt>
@@ -305,7 +306,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB925-noframe.png" alt="FlowerMB925">
+                    <img src="images/thumb-mFlower-MB925-noframe.png" alt="FlowerMB925">
                     <figcaption>
                         <dl>
                             <dt>MB925</dt>
@@ -320,7 +321,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB924-noframe.png" alt="FlowerMB924">
+                    <img src="images/thumb-mFlower-MB924-noframe.png" alt="FlowerMB924">
                     <figcaption>
                         <dl>
                             <dt>MB924</dt>
@@ -335,7 +336,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB922-noframe.png" alt="FlowerMB922">
+                    <img src="images/thumb-mFlower-MB922-noframe.png" alt="FlowerMB922">
                     <figcaption>
                         <dl>
                             <dt>MB922</dt>
@@ -350,7 +351,7 @@
             </li>
             <li data-category="SWINGING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB923-noframe.png" alt="FlowerMB923">
+                    <img src="images/thumb-mFlower-MB923-noframe.png" alt="FlowerMB923">
                     <figcaption>
                         <dl>
                             <dt>MB923</dt>
@@ -365,7 +366,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB921-noframe.png" alt="FlowerMB921">
+                    <img src="images/thumb-mFlower-MB921-noframe.png" alt="FlowerMB921">
                     <figcaption>
                         <dl>
                             <dt>MB921</dt>
@@ -380,7 +381,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB920-noframe.png" alt="FlowerMB920">
+                    <img src="images/thumb-mFlower-MB920-noframe.png" alt="FlowerMB920">
                     <figcaption>
                         <dl>
                             <dt>MB920</dt>
@@ -395,7 +396,7 @@
             </li>
             <li data-category="SWINGING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB624-noframe.png" alt="FlowerMB624">
+                    <img src="images/thumb-mFlower-MB624-noframe.png" alt="FlowerMB624">
                     <figcaption>
                         <dl>
                             <dt>MB624</dt>
@@ -410,7 +411,7 @@
             </li>
             <li data-category="ENTRANCE">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC914-noframe.png" alt="FlowerMC914">
+                    <img src="images/thumb-mFlower-MC914-noframe.png" alt="FlowerMC914">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -426,7 +427,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC913-noframe.png" alt="FlowerMC913">
+                    <img src="images/thumb-mFlower-MC913-noframe.png" alt="FlowerMC913">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -442,7 +443,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC912-noframe.png" alt="FlowerMC912">
+                    <img src="images/thumb-mFlower-MC912-noframe.png" alt="FlowerMC912">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -458,7 +459,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC911-noframe.png" alt="FlowerMC911">
+                    <img src="images/thumb-mFlower-MC911-noframe.png" alt="FlowerMC911">
                     <figcaption>
                         <mark>BEST</mark>
                         <dl>
@@ -474,7 +475,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure> 
-                    <img src="images/thumbFlower/mFlower-MC906-noframe.png" alt="FlowerMC906">
+                    <img src="images/thumb-mFlower-MC906-noframe.png" alt="FlowerMC906">
                     <figcaption>
                         <dl>
                             <dt>MC906</dt>
@@ -489,7 +490,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MD905-noframe.png" alt="FlowerMD905">
+                    <img src="images/thumb-mFlower-MD905-noframe.png" alt="FlowerMD905">
                     <figcaption>
                         <dl>
                             <dt>MD905</dt>
@@ -504,7 +505,7 @@
             </li>
             <li data-category="SWINGING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MD904-noframe.png" alt="FlowerMD904">
+                    <img src="images/thumb-mFlower-MD904-noframe.png" alt="FlowerMD904">
                     <figcaption>
                         <dl>
                             <dt>MD904</dt>
@@ -519,7 +520,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-ME902-noframe.png" alt="FlowerME902">
+                    <img src="images/thumb-mFlower-ME902-noframe.png" alt="FlowerME902">
                     <figcaption>
                         <dl>
                             <dt>ME902</dt>
@@ -534,7 +535,7 @@
             </li>
             <li data-category="SWINGING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-ME903-noframe.png" alt="FlowerME903">
+                    <img src="images/thumb-mFlower-ME903-noframe.png" alt="FlowerME903">
                     <figcaption>
                         <dl>
                             <dt>ME903</dt>
@@ -549,7 +550,7 @@
             </li>
             <li data-category="SLIDING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-ME901-noframe.png" alt="FlowerME901">
+                    <img src="images/thumb-mFlower-ME901-noframe.png" alt="FlowerME901">
                     <figcaption>
                         <dl>
                             <dt>ME901</dt>
@@ -564,7 +565,7 @@
             </li>
             <li data-category="COLORFUL">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MF900-noframe.png" alt="FlowerMF900">
+                    <img src="images/thumb-mFlower-MF900-noframe.png" alt="FlowerMF900">
                     <figcaption>
                         <dl>
                             <dt>MF900</dt>
@@ -579,7 +580,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MA933-noframe.png" alt="FlowerMA933">
+                    <img src="images/thumb-mFlower-MA933-noframe.png" alt="FlowerMA933">
                     <figcaption>
                         <dl>
                             <dt>MA933</dt>
@@ -594,7 +595,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB931-noframe.png" alt="FlowerMB931">
+                    <img src="images/thumb-mFlower-MB931-noframe.png" alt="FlowerMB931">
                     <figcaption>
                         <dl>
                             <dt>MB931</dt>
@@ -609,7 +610,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC919-noframe.png" alt="FlowerMC919">
+                    <img src="images/thumb-mFlower-MC919-noframe.png" alt="FlowerMC919">
                     <figcaption>
                         <dl>
                             <dt>MC919</dt>
@@ -624,7 +625,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB930-noframe.png" alt="FlowerMB930">
+                    <img src="images/thumb-mFlower-MB930-noframe.png" alt="FlowerMB930">
                     <figcaption>
                         <dl>
                             <dt>MB930</dt>
@@ -639,7 +640,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB929-noframe.png" alt="FlowerMB929">
+                    <img src="images/thumb-mFlower-MB929-noframe.png" alt="FlowerMB929">
                     <figcaption>
                         <dl>
                             <dt>MB929</dt>
@@ -654,7 +655,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB928-noframe.png" alt="FlowerMB928">
+                    <img src="images/thumb-mFlower-MB928-noframe.png" alt="FlowerMB928">
                     <figcaption>
                         <dl>
                             <dt>MB928</dt>
@@ -669,7 +670,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB927-noframe.png" alt="FlowerMB927">
+                    <img src="images/thumb-mFlower-MB927-noframe.png" alt="FlowerMB927">
                     <figcaption>
                         <dl>
                             <dt>MB927</dt>
@@ -684,7 +685,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC918-noframe.png" alt="FlowerMC918">
+                    <img src="images/thumb-mFlower-MC918-noframe.png" alt="FlowerMC918">
                     <figcaption>
                         <dl>
                             <dt>MC918</dt>
@@ -699,7 +700,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC917-noframe.png" alt="FlowerMC917">
+                    <img src="images/thumb-mFlower-MC917-noframe.png" alt="FlowerMC917">
                     <figcaption>
                         <dl>
                             <dt>MC917</dt>
@@ -714,7 +715,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MB926-noframe.png" alt="FlowerMB926">
+                    <img src="images/thumb-mFlower-MB926-noframe.png" alt="FlowerMB926">
                     <figcaption>
                         <dl>
                             <dt>MB926</dt>
@@ -729,7 +730,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC916-noframe.png" alt="FlowerMC916">
+                    <img src="images/thumb-mFlower-MC916-noframe.png" alt="FlowerMC916">
                     <figcaption>
                         <dl>
                             <dt>MC916</dt>
@@ -744,7 +745,7 @@
             </li>
             <li data-category="3INTERLOCKING">
                 <figure>
-                    <img src="images/thumbFlower/mFlower-MC915-noframe.png" alt="FlowerMC915">
+                    <img src="images/thumb-mFlower-MC915-noframe.png" alt="FlowerMC915">
                     <figcaption>
                         <dl>
                             <dt>MC915</dt>

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>casestudy</title>
+    <title>DR.door</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <link rel="stylesheet" href="css/import.css">
-    <script scr="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script scr="js/test.js"></script>
 </head>
 <body>
     <div id="searchPanel">
@@ -23,54 +24,54 @@
         </form>
         <div>
             <h3>Are there any categories you are looking for?</h3>
-                <ul>
-                    <li class="active">#ENTRANCE</li>
-                    <li>#SLIDING</li>
-                    <li>#SWINGING</li>
-                    <li>#HANGER</li>
-                    <li>#3INTERLOCKING</li>
-                </ul>
-            </div>
             <ul>
-                <li>
-                    <a href="modernMangipAquaDetail.html">
-                        <img src="images/thumbModern/mModern-aqua-noframe.png" alt="">
-                        Modern-aqua
-                    </a>
-                </li>
-                <li>
-                    <a href="modernBronzeDetail.html">
-                        <img src="images/thumbModern/mModern-bronze-noframe.png" alt="">
-                        Modern-bronze
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMangipDetail.html">
-                        <img src="images/thumbModern/mModern-mangip-noframe.png" alt="">
-                        Modern-mangip
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMB508Detail.html">
-                        <img src="images/thumbModern/mModern-MB508-noframe.png" alt="">
-                        Modern-MB508
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSADetail.html">
-                        <img src="images/thumbModern/mModern-MSA-noframe.png" alt="">
-                        Modern-MSA
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSFDetail.html">
-                        <img src="images/thumbModern/mModern-MSF-noframe.png" alt="">
-                        Modern-MSF
-                    </a>
-                </li>
+                <li class="active">#ENTRANCE</li>
+                <li>#SLIDING</li>
+                <li>#SWINGING</li>
+                <li>#HANGER</li>
+                <li>#3INTERLOCKING</li>
             </ul>
+        </div>
+        <ul>
+            <li>
+                <a href="modernMangipAquaDetail.html">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="">
+                    Modern-aqua
+                </a>
+            </li>
+            <li>
+                <a href="modernBronzeDetail.html">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="">
+                    Modern-bronze
+                </a>
+            </li>
+            <li>
+                <a href="detailModernMangip.html">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="">
+                    Modern-mangip
+                </a>
+            </li>
+            <li>
+                <a href="modernMB508Detail.html">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="">
+                    Modern-MB508
+                </a>
+            </li>
+            <li>
+                <a href="modernMSADetail.html">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="">
+                    Modern-MSA
+                </a>
+            </li>
+            <li>
+                <a href="modernMSFDetail.html">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="">
+                    Modern-MSF
+                </a>
+            </li>
+        </ul>
         
-       
+        
         <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
     </div>
 
@@ -78,7 +79,7 @@
         <li><a href="index_after.html">home</a></li>
         <li><a href="talktalkURL">message</a></li>
         <li><a href="files/fileName.ext">download</a></li>
-        <li>cart <span>99</span></li>
+        <li data-panel="searchPanel">cart <span>99</span></li>
     </ul>
     <!-- popup,panel 구조 -->
     <a href="#" class="btn_top">top</a>
@@ -226,7 +227,7 @@
 <ul>
     <li data-category="ENTRANCE">
         <figure>
-            <img src="images/thumbUnique/mUnique-MF801-noframe.png" alt="UniqueMF801">
+            <img src="images/thumb-mUnique-MF801-noframe.png" alt="UniqueMF801">
             <figcaption>
                 <mark>BEST</mark>
                 <dl>
@@ -242,7 +243,7 @@
     </li>
     <li data-category="SLIDING">
         <figure>
-            <img src="images/thumbUnique/mUnique-MF803-noframe.png" alt="UniqueMF803">
+            <img src="images/thumb-mUnique-MF803-noframe.png" alt="UniqueMF803">
             <figcaption>
                 <mark>BEST</mark>
                 <dl>
@@ -258,23 +259,23 @@
     </li>
     <li data-category="ENTRANCE">
         <figure>
-            <img src="images/thumbUnique/mUnique-MD804-noframe.png" alt="UniqueMD804">
+            <img src="images/thumb-mUnique-MB804-noframe.png" alt="UniqueMB804">
             <figcaption>
                 <mark>BEST</mark>
                 <dl>
-                    <dt>MD804</dt>
+                    <dt>MB804</dt>
                     <dd>910,000won</dd>
                     </dl>
                 <div>
                     <mark>SALE</mark>
-                    <a href="UniqueMD804pDetail.html">view more</a>
+                    <a href="UniqueMB804pDetail.html">view more</a>
                 </div>
             </figcaption>
         </figure>
     </li>
     <li data-category="SLIDING">
         <figure>
-            <img src="images/thumbUnique/mUnique-MB806-noframe.png" alt="UniqueMB806">
+            <img src="images/thumb-mUnique-MB806-noframe.png" alt="UniqueMB806">
             <figcaption>
                 <mark>BEST</mark>
                 <dl>
@@ -290,7 +291,7 @@
     </li>
     <li data-category="SLIDING">
         <figure> 
-            <img src="images/thumbUnique/mUnique-MB806-noframe.png" alt="UniqueMB806">
+            <img src="images/thumb-mUnique-MB806-noframe.png" alt="UniqueMB806">
             <figcaption>
                 <dl>
                     <dt>MB806</dt>
@@ -305,7 +306,7 @@
     </li>
     <li data-category="SWINGING">
         <figure>
-            <img src="images/thumbUnique/mUnique-MB807-noframe.png" alt="UniqueMB807">
+            <img src="images/thumb-mUnique-MB807-noframe.png" alt="UniqueMB807">
             <figcaption>
                 <dl>
                     <dt>MB807</dt>
@@ -320,7 +321,7 @@
     </li>
     <li data-category="COLORFUL">
         <figure>
-            <img src="images/thumbUnique/mUnique-MB805-noframe.png" alt="UniqueMB805">
+            <img src="images/thumb-mUnique-MB805-noframe.png" alt="UniqueMB805">
             <figcaption>
                 <dl>
                     <dt>MB805</dt>
@@ -335,22 +336,22 @@
     </li>
     <li data-category="COLORFUL">
         <figure>
-            <img src="images/thumbUnique/mUnique-MD804-noframe.png" alt="UniqueMD804">
+            <img src="images/thumb-mUnique-MB804-noframe.png" alt="UniqueMB804">
             <figcaption>
                 <dl>
-                    <dt>MD804</dt>
+                    <dt>MB804</dt>
                     <dd>910,000won</dd>
                     </dl>
                 <div>
                     <mark>SALE</mark>
-                    <a href="UniqueMD804Detail.html">view more</a>
+                    <a href="UniqueMB804Detail.html">view more</a>
                 </div>
             </figcaption>
         </figure>
     </li>
     <li data-category="SWINGING">
         <figure>
-            <img src="images/thumbUnique/mUnique-MF801-noframe.png" alt="UniqueMF801">
+            <img src="images/thumb-mUnique-MF801-noframe.png" alt="UniqueMF801">
             <figcaption>
                 <dl>
                     <dt>MF801</dt>
@@ -365,7 +366,7 @@
     </li>
     <li data-category="SLIDING">
         <figure>
-            <img src="images/thumbUnique/mUnique-MF803-noframe.png" alt="UniqueMF803">
+            <img src="images/thumb-mUnique-MF803-noframe.png" alt="UniqueMF803">
             <figcaption>
                 <dl>
                     <dt>MF803</dt>
@@ -380,7 +381,7 @@
     </li>
     <li data-category="SWINGING">
         <figure>
-            <img src="images/thumbUnique/mUnique-MF802-noframe.png" alt="UniqueMF802">
+            <img src="images/thumb-mUnique-MF802-noframe.png" alt="UniqueMF802">
             <figcaption>
                 <dl>
                     <dt>MF802</dt>
@@ -395,7 +396,7 @@
     </li>
     <li data-category="SLIDING">
         <figure>
-            <img src="images/thumbUnique/mUnique-MF800-noframe.png" alt="UniqueMF800">
+            <img src="images/thumb-mUnique-MF800-noframe.png" alt="UniqueMF800">
             <figcaption>
                 <dl>
                     <dt>MF800</dt>

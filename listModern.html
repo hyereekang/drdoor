@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>casestudy</title>
+    <title>DR.door</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <link rel="stylesheet" href="css/import.css">
-    <script scr="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script scr="js/test.js"></script>
 </head>
 <body>
     <div id="searchPanel">
@@ -23,54 +24,54 @@
         </form>
         <div>
             <h3>Are there any categories you are looking for?</h3>
-                <ul>
-                    <li class="active">#ENTRANCE</li>
-                    <li>#SLIDING</li>
-                    <li>#SWINGING</li>
-                    <li>#HANGER</li>
-                    <li>#3INTERLOCKING</li>
-                </ul>
-            </div>
             <ul>
-                <li>
-                    <a href="modernMangipAquaDetail.html">
-                        <img src="images/thumbModern/mModern-aqua-noframe.png" alt="">
-                        Modern-aqua
-                    </a>
-                </li>
-                <li>
-                    <a href="modernBronzeDetail.html">
-                        <img src="images/thumbModern/mModern-bronze-noframe.png" alt="">
-                        Modern-bronze
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMangipDetail.html">
-                        <img src="images/thumbModern/mModern-mangip-noframe.png" alt="">
-                        Modern-mangip
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMB508Detail.html">
-                        <img src="images/thumbModern/mModern-MB508-noframe.png" alt="">
-                        Modern-MB508
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSADetail.html">
-                        <img src="images/thumbModern/mModern-MSA-noframe.png" alt="">
-                        Modern-MSA
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSFDetail.html">
-                        <img src="images/thumbModern/mModern-MSF-noframe.png" alt="">
-                        Modern-MSF
-                    </a>
-                </li>
+                <li class="active">#ENTRANCE</li>
+                <li>#SLIDING</li>
+                <li>#SWINGING</li>
+                <li>#HANGER</li>
+                <li>#3INTERLOCKING</li>
             </ul>
+        </div>
+        <ul>
+            <li>
+                <a href="modernMangipAquaDetail.html">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="">
+                    Modern-aqua
+                </a>
+            </li>
+            <li>
+                <a href="modernBronzeDetail.html">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="">
+                    Modern-bronze
+                </a>
+            </li>
+            <li>
+                <a href="detailModernMangip.html">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="">
+                    Modern-mangip
+                </a>
+            </li>
+            <li>
+                <a href="modernMB508Detail.html">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="">
+                    Modern-MB508
+                </a>
+            </li>
+            <li>
+                <a href="modernMSADetail.html">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="">
+                    Modern-MSA
+                </a>
+            </li>
+            <li>
+                <a href="modernMSFDetail.html">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="">
+                    Modern-MSF
+                </a>
+            </li>
+        </ul>
         
-       
+        
         <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
     </div>
 
@@ -78,7 +79,7 @@
         <li><a href="index_after.html">home</a></li>
         <li><a href="talktalkURL">message</a></li>
         <li><a href="files/fileName.ext">download</a></li>
-        <li>cart <span>99</span></li>
+        <li data-panel="searchPanel">cart <span>99</span></li>
     </ul>
     <!-- popup,panel 구조 -->
     <a href="#" class="btn_top">top</a>
@@ -127,6 +128,7 @@
                         <li><a href="doorCare.html">Dr. DoorCare</a></li>
                     </ul>
                 </div>
+                
                 <div id="storeBox">
                     <h3>store</h3>
                     <ul>
@@ -175,34 +177,34 @@
                 <span>Products</span>
             </div>
             <h2>CASESTUDY</h2>
-            <ul class="selective">
-                <li>
-                    <a href="listModern.html">
-                        Modern
-                    </a>
-                </li>
-                <li>
-                    <a href="listArt.html">
-                        Art
-                    </a>
-                </li>
-                <li>
-                    <a href="listClassic.html">
-                        Classic
-                    </a>
-                </li>
-                <li>
-                    <a href="listUnique.html">
-                        Unique
-                    </a>
-                </li>
-                <li>
-                    <a href="listFlower.html">
-                        Flower
-                    </a>
-                </li>
-            </ul>
         </div>
+        <ul class="selective">
+            <li>
+                <a href="listModern.html">
+                    Modern
+                </a>
+            </li>
+            <li>
+                <a href="listArt.html">
+                    Art
+                </a>
+            </li>
+            <li>
+                <a href="listClassic.html">
+                    Classic
+                </a>
+            </li>
+            <li>
+                <a href="listUnique.html">
+                    Unique
+                </a>
+            </li>
+            <li>
+                <a href="listFlower.html">
+                    Flower
+                </a>
+            </li>
+        </ul>
         <div>
             <ol class="hashFilter">
                 <li class="active">ALL</li>
@@ -220,313 +222,313 @@
             </form>
         </div>
        
-<ul>
-    <li data-category="ENTRANCE">
-        <figure>
-            <img src="images/thumbModern/mModern-mangip-noframe.png" alt="modernMangip">
-            <figcaption>
-                <mark>BEST</mark>
-                <dl>
-                    <dt>mangip</dt>
-                    <dd>780,000won</dd>
-                </dl>
-                <div>
-                    <mark>NEW</mark>
-                    <a href="modernMangipDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SLIDING">
-        <figure>
-            <img src="images/thumbModern/mModern-MC505-noframe.png" alt="modernMC505">
-            <figcaption>
-                <mark>BEST</mark>
-                <dl>
-                    <dt>MC505</dt>
-                    <dd>930,000won</dd>
-                </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMangipDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MSD-noframe.png" alt="modernMSD">
-            <figcaption>
-                <mark>BEST</mark>
-                <dl>
-                    <dt>MSD</dt>
-                    <dd>1,210,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMSDpDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MSC-noframe.png" alt="modernMSC">
-            <figcaption>
-                <mark>BEST</mark>
-                <dl>
-                    <dt>MSC</dt>
-                    <dd>1,210,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMSCDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SLIDING">
-        <figure> 
-            <img src="images/thumbModern/mModern-Transparency-noframe.png" alt="modernTransparency">
-            <figcaption>
-                <dl>
-                    <dt>Transparency</dt>
-                    <dd>780,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernTransparencyDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SLIDING">
-        <figure>
-            <img src="images/thumbModern/mModern-aqua-noframe.png" alt="modernAqua">
-            <figcaption>
-                <dl>
-                    <dt>aqua</dt>
-                    <dd>780,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernaquaDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SWINGING">
-        <figure>
-            <img src="images/thumbModern/mModern-bronze-noframe.png" alt="modernBronze">
-            <figcaption>
-                <dl>
-                    <dt>bronze</dt>
-                    <dd>780,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernbronzeDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SWINGING">
-        <figure> 
-            <img src="images/thumbModern/mModern-MB508-noframe.png" alt="modernMB508">
-            <figcaption>
-                <dl>
-                    <dt>MB508</dt>
-                    <dd>950,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMB508Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MB507-noframe.png" alt="modernMB507">
-            <figcaption>
-                <dl>
-                    <dt>MB507</dt>
-                    <dd>950,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMB507Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MB506-noframe.png" alt="modernMB506">
-            <figcaption>
-                <dl>
-                    <dt>MB506</dt>
-                    <dd>950,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMB506Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MC505-noframe.png" alt="modernMC505">
-            <figcaption>
-                <dl>
-                    <dt>MC505</dt>
-                    <dd>930,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMC505Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MC504-noframe.png" alt="modernMC504">
-            <figcaption>
-                <dl>
-                    <dt>MC504</dt>
-                    <dd>930,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMC504Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MC503-noframe.png" alt="modernMC503">
-            <figcaption>
-                <dl>
-                    <dt>MC503</dt>
-                    <dd>930,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMC503Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SLIDING">
-        <figure>
-            <img src="images/thumbModern/mModern-MC502-noframe.png" alt="modernMC502">
-            <figcaption>
-                <dl>
-                    <dt>MC502</dt>
-                    <dd>930,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMC502Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SLIDING">
-        <figure>
-            <img src="images/thumbModern/mModern-MB501-noframe.png" alt="modernMB501">
-            <figcaption>
-                <dl>
-                    <dt>MB501</dt>
-                    <dd>930,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMB501Detail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="SWINGING">
-        <figure>
-            <img src="images/thumbModern/mModern-MSA-noframe.png" alt="modernMSA">
-            <figcaption>
-                <dl>
-                    <dt>MSA</dt>
-                    <dd>1,210,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMSADetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MSB-noframe.png" alt="modernMSB">
-            <figcaption>
-                <dl>
-                    <dt>MSB</dt>
-                    <dd>1,210,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMSBDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MSD-noframe.png" alt="modernMSD">
-            <figcaption>
-                <dl>
-                    <dt>MSD</dt>
-                    <dd>1,210,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMSDDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MSE-noframe.png" alt="modernMSE">
-            <figcaption>
-                <dl>
-                    <dt>MSE</dt>
-                    <dd>1,210,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMSEDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
-    <li data-category="HANGER">
-        <figure>
-            <img src="images/thumbModern/mModern-MSF-noframe.png" alt="modernMSF">
-            <figcaption>
-                <dl>
-                    <dt>MSF</dt>
-                    <dd>1,210,000won</dd>
-                    </dl>
-                <div>
-                    <mark>SALE</mark>
-                    <a href="modernMSFDetail.html">view more</a>
-                </div>
-            </figcaption>
-        </figure>
-    </li>
+        <ul id="modernList">
+            <li data-category="ENTRANCE">
+                <figure>
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="modernMangip">
+                    <figcaption>
+                        <mark>BEST</mark>
+                        <dl>
+                            <dt>mangip</dt>
+                            <dd>780,000won</dd>
+                        </dl>
+                        <div>
+                            <mark>NEW</mark>
+                            <a href="detailModernMangip.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SLIDING">
+                <figure>
+                    <img src="images/thumb-mModern-MC505-noframe.png" alt="modernMC505">
+                    <figcaption>
+                        <mark>BEST</mark>
+                        <dl>
+                            <dt>MC505</dt>
+                            <dd>930,000won</dd>
+                        </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="detailModernMangip.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MSD-noframe.png" alt="modernMSD">
+                    <figcaption>
+                        <mark>BEST</mark>
+                        <dl>
+                            <dt>MSD</dt>
+                            <dd>1,210,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMSDpDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MSC-noframe.png" alt="modernMSC">
+                    <figcaption>
+                        <mark>BEST</mark>
+                        <dl>
+                            <dt>MSC</dt>
+                            <dd>1,210,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMSCDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SLIDING">
+                <figure> 
+                    <img src="images/thumb-mModern-Transparency-noframe.png" alt="modernTransparency">
+                    <figcaption>
+                        <dl>
+                            <dt>Transparency</dt>
+                            <dd>780,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernTransparencyDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SLIDING">
+                <figure>
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="modernAqua">
+                    <figcaption>
+                        <dl>
+                            <dt>aqua</dt>
+                            <dd>780,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernaquaDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SWINGING">
+                <figure>
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="modernBronze">
+                    <figcaption>
+                        <dl>
+                            <dt>bronze</dt>
+                            <dd>780,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernbronzeDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SWINGING">
+                <figure> 
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="modernMB508">
+                    <figcaption>
+                        <dl>
+                            <dt>MB508</dt>
+                            <dd>950,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMB508Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MB507-noframe.png" alt="modernMB507">
+                    <figcaption>
+                        <dl>
+                            <dt>MB507</dt>
+                            <dd>950,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMB507Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MB506-noframe.png" alt="modernMB506">
+                    <figcaption>
+                        <dl>
+                            <dt>MB506</dt>
+                            <dd>950,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMB506Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MC505-noframe.png" alt="modernMC505">
+                    <figcaption>
+                        <dl>
+                            <dt>MC505</dt>
+                            <dd>930,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMC505Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MC504-noframe.png" alt="modernMC504">
+                    <figcaption>
+                        <dl>
+                            <dt>MC504</dt>
+                            <dd>930,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMC504Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MC503-noframe.png" alt="modernMC503">
+                    <figcaption>
+                        <dl>
+                            <dt>MC503</dt>
+                            <dd>930,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMC503Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SLIDING">
+                <figure>
+                    <img src="images/thumb-mModern-MC502-noframe.png" alt="modernMC502">
+                    <figcaption>
+                        <dl>
+                            <dt>MC502</dt>
+                            <dd>930,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMC502Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SLIDING">
+                <figure>
+                    <img src="images/thumb-mModern-MB501-noframe.png" alt="modernMB501">
+                    <figcaption>
+                        <dl>
+                            <dt>MB501</dt>
+                            <dd>930,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMB501Detail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="SWINGING">
+                <figure>
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="modernMSA">
+                    <figcaption>
+                        <dl>
+                            <dt>MSA</dt>
+                            <dd>1,210,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMSADetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MSB-noframe.png" alt="modernMSB">
+                    <figcaption>
+                        <dl>
+                            <dt>MSB</dt>
+                            <dd>1,210,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMSBDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MSD-noframe.png" alt="modernMSD">
+                    <figcaption>
+                        <dl>
+                            <dt>MSD</dt>
+                            <dd>1,210,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMSDDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MSE-noframe.png" alt="modernMSE">
+                    <figcaption>
+                        <dl>
+                            <dt>MSE</dt>
+                            <dd>1,210,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMSEDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
+            <li data-category="HANGER">
+                <figure>
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="modernMSF">
+                    <figcaption>
+                        <dl>
+                            <dt>MSF</dt>
+                            <dd>1,210,000won</dd>
+                            </dl>
+                        <div>
+                            <mark>SALE</mark>
+                            <a href="modernMSFDetail.html">view more</a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </li>
 
-</ul>
+        </ul>
     </section>
 
 

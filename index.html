@@ -5,168 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>drdoorIndex</title>
-    <link rel="stylesheet" href="portfolio-git/CSS/import.css">
+    <link rel="stylesheet" href="CSS/import.css">
 </head>
 <body>
-    <body>
-        <div id="searchPanel">
-            <input type="button" value="closeButton" class="btn_close">
-            <h2>
-                What are you looking for?
-                <a href="">view more &gt;</a>
-            </h2>
-            <form>
-                <label for="searchField">Search for a product</label>
-                <input type="search" id="searchField">
-                <input type="submit" value="Search">
-            </form>
-            <div>
-                <h3>Are there any categories you are looking for?</h3>
+    <div id="searchPanel">
+        <input type="button" value="closeButton" class="btn_close">
+        <h2>
+            What are you looking for?
+            <a href="">view more &gt;</a>
+        </h2>
+        <form>
+            <label for="searchField">Search for a product</label>
+            <input type="search" id="searchField">
+            <input type="submit" value="Search">
+        </form>
+        <div>
+            <h3>Are there any categories you are looking for?</h3>
+            <ul>
+                <li class="active">#ENTRANCE</li>
+                <li>#SLIDING</li>
+                <li>#SWINGING</li>
+                <li>#HANGER</li>
+                <li>#3INTERLOCKING</li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a href="modernMangipAquaDetail.html">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="mModern">
+                    Modern-aqua
+                </a>
+            </li>
+            <li>
+                <a href="modernBronzeDetail.html">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="">
+                    Modern-bronze
+                </a>
+            </li>
+            <li>
+                <a href="detailModernMangip.html">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="">
+                    Modern-mangip
+                </a>
+            </li>
+            <li>
+                <a href="modernMB508Detail.html">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="">
+                    Modern-MB508
+                </a>
+            </li>
+            <li>
+                <a href="modernMSADetail.html">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="">
+                    Modern-MSA
+                </a>
+            </li>
+            <li>
+                <a href="modernMSFDetail.html">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="">
+                    Modern-MSF
+                </a>
+            </li>
+        </ul>
+        
+        
+        <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
+    </div>
+
+    <ul class="sideNav">
+        <li><a href="index_after.html">home</a></li>
+        <li><a href="talktalkURL">message</a></li>
+        <li><a href="files/fileName.ext">download</a></li>
+        <li data-panel="searchPanel">cart <span>99</span></li>
+    </ul>
+    <!-- popup,panel 구조 -->
+    <a href="#" class="btn_top">top</a>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html"><img src="images/header-Logo.png" alt="dr.moon door"></a>
+            </h1>
+            <nav>
                 <ul>
-                    <li class="active">#ENTRANCE</li>
-                    <li>#SLIDING</li>
-                    <li>#SWINGING</li>
-                    <li>#HANGER</li>
-                    <li>#3INTERLOCKING</li>
+                    <li data-gnbPanel="doorBox">Door</li>
+                    <li data-gnbPanel="interiorBox">interior</li>
+                    <li data-gnbPanel="serviceBox">Service</li>
+                    <li data-gnbPanel="storeBox">Store</li>
+                    <li data-gnbPanel="portfolioBox">Casestudy</li>
+                    <li data-gnbPanel="newsBox">News</li>
                 </ul>
-            </div>
+                <!-- click을 했을 때 열어야 하는 경우 -> 버튼: data-xxx="열리는아이디명" 열리는 대상: id="열리는아이디명" -->
+                <div id="doorBox">
+                    <h2>Dr. Moon story</h2>
+                    <ul>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="IR.html">IR</a></li>
+                        <li><a href="History.html">History</a></li>
+                    </ul>
+                </div>
+                <div id="interiorBox">
+                    <h2>installation case</h2>
+                    <ul>
+                        <li><a href="InteriorCommercial.html">Commercial Space</a></li>
+                        <li><a href="InteriorResidentialDress.html">Residential Space</a></li>
+                    </ul>
+                    <h2>style</h2>
+                    <ul>
+                        <li><a href="listModern.html">Modern</a></li>
+                        <li><a href="listArt.html">Art</a></li>
+                        <li><a href="listClassic.html">Classic</a></li>
+                        <li><a href="listUnique.html">Unique</a></li>
+                        <li><a href="listFlower.html">Flower</a></li>
+                    </ul>
+                </div> 
+                <div id="serviceBox">
+                    <h3>Service center</h3>
+                    <ul>
+                        <li><a href="QnA.html">1:1 Inquiry Board</a></li>
+                        <li><a href="doorCare.html">Dr. DoorCare</a></li>
+                    </ul>
+                </div>
+                
+                <div id="storeBox">
+                    <h3>store</h3>
+                    <ul>
+                        <li><a href="showRoom.html">Showroom</a></li>
+                        <li><a href="Store.html">Location</a></li>
+                    </ul>
+                </div>
+                <div id="portfolioBox">
+                    <h3>casestudy</h3>
+                    <ul>
+                        <h3>style</h3>
+                        <li><a href="listModern.html">Modern</a></li>
+                        <li><a href="listArt.html">Art</a></li>
+                        <li><a href="listClassic.html">Classic</a></li>
+                        <li><a href="listUnique.html">Unique</a></li>
+                        <li><a href="listFlower.html">Flower</a></li>
+                    </ul>
+                </div>
+                <div id="newsBox">
+                    <h3>News</h3>
+                    <ul>
+                        <li><a href="eventPromotion.html">Event / Promotion</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="customerReview.html">Customer Review</a></li>
+                    </ul>
+                </div>
+            </nav>
             <ul>
                 <li>
-                    <a href="modernMangipAquaDetail.html">
-                        <img src="images/thumbModern/mModern-aqua-noframe.png" alt="">
-                        Modern-aqua
-                    </a>
+                    <a href="mypage.html">Shopping</a>
                 </li>
+                <li><a href="Signup.html">login</a></li>
                 <li>
-                    <a href="modernBronzeDetail.html">
-                        <img src="images/thumbModern/mModern-bronze-noframe.png" alt="">
-                        Modern-bronze
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMangipDetail.html">
-                        <img src="images/thumbModern/mModern-mangip-noframe.png" alt="">
-                        Modern-mangip
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMB508Detail.html">
-                        <img src="images/thumbModern/mModern-MB508-noframe.png" alt="">
-                        Modern-MB508
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSADetail.html">
-                        <img src="images/thumbModern/mModern-MSA-noframe.png" alt="">
-                        Modern-MSA
-                    </a>
-                </li>
-                <li>
-                    <a href="modernMSFDetail.html">
-                        <img src="images/thumbModern/mModern-MSF-noframe.png" alt="">
-                        Modern-MSF
-                    </a>
+                    <input type="button" value="Search" data-popup="searchPanel">
                 </li>
             </ul>
-            
-           
-            <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
         </div>
-    
-        <ul class="sideNav">
-            <li><a href="index_after.html">home</a></li>
-            <li><a href="talktalkURL">message</a></li>
-            <li><a href="files/fileName.ext">download</a></li>
-            <li>cart <span>99</span></li>
-        </ul>
-        <!-- popup,panel 구조 -->
-        <a href="#" class="btn_top">top</a>
-        <header>
-            <div>
-                <h1>
-                    <a href="index.html"><img src="images/header-Logo.png" alt="dr.moon door"></a>
-                </h1>
-                <nav>
-                    <ul>
-                        <li data-gnbPanel="doorBox">Door</li>
-                        <li data-gnbPanel="interiorBox">interior</li>
-                        <li data-gnbPanel="serviceBox">Service</li>
-                        <li data-gnbPanel="storeBox">Store</li>
-                        <li data-gnbPanel="portfolioBox">Casestudy</li>
-                        <li data-gnbPanel="newsBox">News</li>
-                    </ul>
-                    <!-- click을 했을 때 열어야 하는 경우 -> 버튼: data-xxx="열리는아이디명" 열리는 대상: id="열리는아이디명" -->
-                    <div id="doorBox">
-                        <h2>Dr. Moon story</h2>
-                        <ul>
-                            <li><a href="AboutUs.html">About us</a></li>
-                            <li><a href="IR.html">IR</a></li>
-                            <li><a href="History.html">History</a></li>
-                        </ul>
-                    </div>
-                    <div id="interiorBox">
-                        <h2>installation case</h2>
-                        <ul>
-                            <li><a href="InteriorCommercial.html">Commercial Space</a></li>
-                            <li><a href="InteriorResidentialDress.html">Residential Space</a></li>
-                        </ul>
-                        <h2>style</h2>
-                        <ul>
-                            <li><a href="listModern.html">Modern</a></li>
-                            <li><a href="listArt.html">Art</a></li>
-                            <li><a href="listClassic.html">Classic</a></li>
-                            <li><a href="listUnique.html">Unique</a></li>
-                            <li><a href="listFlower.html">Flower</a></li>
-                        </ul>
-                    </div> 
-                    <div id="serviceBox">
-                        <h3>Service center</h3>
-                        <ul>
-                            <li><a href="QnA.html">1:1 Inquiry Board</a></li>
-                            <li><a href="doorCare.html">Dr. DoorCare</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div id="storeBox">
-                        <h3>store</h3>
-                        <ul>
-                            <li><a href="showRoom.html">Showroom</a></li>
-                            <li><a href="Store.html">Location</a></li>
-                        </ul>
-                    </div>
-                    <div id="portfolioBox">
-                        <h3>casestudy</h3>
-                        <ul>
-                            <h3>style</h3>
-                            <li><a href="listModern.html">Modern</a></li>
-                            <li><a href="listArt.html">Art</a></li>
-                            <li><a href="listClassic.html">Classic</a></li>
-                            <li><a href="listUnique.html">Unique</a></li>
-                            <li><a href="listFlower.html">Flower</a></li>
-                        </ul>
-                    </div>
-                    <div id="newsBox">
-                        <h3>News</h3>
-                        <ul>
-                            <li><a href="eventPromotion.html">Event / Promotion</a></li>
-                            <li><a href="community.html">Community</a></li>
-                            <li><a href="customerReview.html">Customer Review</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <ul>
-                    <li>
-                        <a href="mypage.html">Shopping</a>
-                    </li>
-                    <li><a href="Signup.html">login</a></li>
-                    <li>
-                        <input type="button" value="Search" data-popup="searchPanel">
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <!-- ? header Fin -->
-    
+    </header>
+    <!-- ? header Fin -->
 
     <!-- content -->
     <section class="mainContainer">
@@ -210,9 +208,9 @@
         </ol>
         <div class="casestudyContent">
             <div class="small-title">
-               <span>01</span>
-               <hr>
-               <span>DR.MOON</span>
+            <span>01</span>
+            <hr>
+            <span>DR.MOON</span>
             </div>
             <h2>CASESTUDY</h2>
             <p>Everything about indoor interior doors!</p>
@@ -245,9 +243,9 @@
         </div>
         <div class="popularContent">
             <div class="small-title">
-               <span>02</span>
-               <hr>
-               <span>DR.MOON</span>
+            <span>02</span>
+            <hr>
+            <span>DR.MOON</span>
             </div>
             <h2>POPULAR ITEM</h2>
             <p>The door most loved as a front door<br>
@@ -285,11 +283,11 @@
                 </aside>
                 <div class="caseProduct">
                     <div id="modernCase">
-                   
+                
                     <ul>
                         <li>
                             <figure>
-                                <img src="images/thumbModern/mModern-mangip-noframe.png" alt="modernMangip">
+                                <img src="images/thumb-mModern-mangip-noframe.png" alt="modernMangip">
                                 <figcaption>
                                     <mark>BEST</mark>
                                     <dl>
@@ -300,15 +298,15 @@
                                         <a href="#">#ENTRANCE</a>
                                         <a href="#">NEW</a>
                                     </span>
-                                    <a href="modernMangipDetail.html">view more</a>
+                                    <a href="detailModernMangip.html">view more</a>
                                 </figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbModern/mModern-MC505-noframe.png" alt="modernMangip">
+                                <img src="images/thumb-mModern-MC505-noframe.png" alt="modernMangip">
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MC505</dt>
                                         <dd>930,000won</dd>
@@ -325,9 +323,9 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbModern/mModern-MSD-noframe.png" alt="modernMSD">
+                                <img src="images/thumb-mModern-MSD-noframe.png" alt="modernMSD">
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MSD</dt>
                                         <dd>1,210,000won</dd>
@@ -344,9 +342,9 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbModern/mModern-MSC-noframe.png" alt="modernMSC">
+                                <img src="images/thumb-mModern-MSC-noframe.png" alt="modernMSC">
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MSC</dt>
                                         <dd>1,210,000won</dd>
@@ -363,7 +361,7 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbModern/mModern-Transparency-noframe.png" alt="modernTransparency">
+                                <img src="images/thumb-mModern-Transparency-noframe.png" alt="modernTransparency">
                                 <figcaption>
                                     <dl>
                                         <dt>Transparency</dt>
@@ -381,7 +379,7 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbModern/mModern-aqua-noframe.png" alt="modernAqua">
+                                <img src="images/thumb-mModern-aqua-noframe.png" alt="modernAqua">
                                 <figcaption>
                                     <dl>
                                         <dt>aqua</dt>
@@ -403,9 +401,9 @@
                     <ul>
                         <li>
                             <figure>
-                                <img src="images/thumbArt/mArt-ME611-noframe.png" alt="artME611">
+                                <img src="images/thumb-mArt-ME611-noframe.png" alt="artME611">
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>ME611</dt>
                                         <dd>890,000won</dd>
@@ -422,9 +420,9 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbArt/mArt-MD615-noframe.png" alt="artMD615">
+                                <img src="images/thumb-mArt-MD615-noframe.png" alt="artMD615">
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MD615</dt>
                                         <dd>910,000won</dd>
@@ -441,9 +439,9 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbArt/mArt-MB628-noframe.png" alt="artMB628">
+                                <img src="images/thumb-mArt-MB628-noframe.png" alt="artMB628">
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MB628</dt>
                                         <dd>950,000won</dd>
@@ -460,9 +458,9 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbArt/mArt-MF603-noframe.png" alt="artMF603">
+                                <img src="images/thumb-mArt-MF603-noframe.png" alt="artMF603">
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MF603</dt>
                                         <dd>900,000won</dd>
@@ -479,7 +477,7 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbArt/mArt-MA633-noframe.png" alt="artMA633">
+                                <img src="images/thumb-mArt-MA633-noframe.png" alt="artMA633">
                                 <figcaption>
                                     <dl>
                                         <dt>MA633</dt>
@@ -497,7 +495,7 @@
                         </li>
                         <li>
                             <figure>
-                                <img src="images/thumbArt/mArt-MB629-noframe.png" alt="artMB629">
+                                <img src="images/thumb-mArt-MB629-noframe.png" alt="artMB629">
                                 <figcaption>
                                     <dl>
                                         <dt>MB629</dt>
@@ -521,9 +519,9 @@
                     <ul>
                         <li>
                             <figure>
-                                <a href="classicMD701Detail.html"><img src="images/thumbclassic/classic-MD701-noframe.png" alt=""></a>
+                                <a href="classicMD701Detail.html"><img src="images/thumb-mClassic-MD701-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MD701</dt>
                                         <dd>910,000won</dd>
@@ -532,7 +530,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbclassic/classic-MD701-noframe.png">view more</a>
+                                            <a href="images/thumb-mClassic-MD701-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -540,9 +538,9 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="classicMD702Detail.html"><img src="images/thumbclassic/classic-MD702-noframe.png" alt=""></a>
+                                <a href="classicMD702Detail.html"><img src="images/thumb-mClassic-MD702-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MD702</dt>
                                         <dd>910,000won</dd>
@@ -551,7 +549,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbclassic/classic-MD702-noframe.png">view more</a>
+                                            <a href="images/thumb-mClassic-MD702-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -559,9 +557,9 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="classicMD703Detail.html"><img src="images/thumbclassic/classic-MD703-noframe.png" alt=""></a>
+                                <a href="classicMD703Detail.html"><img src="images/thumb-mClassic-MD703-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MD703</dt>
                                         <dd>910,000won</dd>
@@ -570,7 +568,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbclassic/classic-MD703-noframe.png">view more</a>
+                                            <a href="images/thumb-mClassic-MD703-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -578,9 +576,9 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="classicMD700Detail.html"><img src="images/thumbclassic/classic-MD700-noframe.png" alt=""></a>
+                                <a href="classicMD700Detail.html"><img src="images/thumb-mClassic-MD700-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MD700</dt>
                                         <dd>910,000won</dd>
@@ -589,7 +587,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbclassic/classic-MD700-noframe.png">view more</a>
+                                            <a href="images/thumb-mClassic-MD700-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -597,17 +595,17 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="classicMB705Detail.html"><img src="images/thumbclassic/classic-MB705-noframe.png" alt=""></a>
+                                <a href="classicMD705Detail.html"><img src="images/thumb-mClassic-MD705-noframe.png" alt=""></a>
                                 <figcaption>
                                     <dl>
-                                        <dt>MB705</dt>
+                                        <dt>MD705</dt>
                                         <dd>950,000won</dd>
                                         <dd>
                                             <span>
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbclassic/classic-MB705-noframe.png">view more</a>
+                                            <a href="images/thumb-mClassic-MD705-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -615,7 +613,7 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="classicMD704Detail.html"><img src="images/thumbclassic/classic-MD704-noframe.png" alt=""></a>
+                                <a href="classicMD704Detail.html"><img src="images/thumb-mClassic-MD704-noframe.png" alt=""></a>
                                 <figcaption>
                                     <dl>
                                         <dt>MD704</dt>
@@ -625,7 +623,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbclassic/classic-MD704-noframe.png">view more</a>
+                                            <a href="images/thumb-mClassic-MD704-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -637,9 +635,9 @@
                     <ul>
                         <li>
                             <figure>
-                                <a href="uniqueMF801Detail.html"><img src="images/thumbunique/unique-MF801-noframe.png" alt=""></a>
+                                <a href="uniqueMF801Detail.html"><img src="images/thumb-mUnique-MF801-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MF801</dt>
                                         <dd>780,000won</dd>
@@ -648,7 +646,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbunique/unique-MF801-noframe.png">view more</a>
+                                            <a href="images/thumb-mUnique-MF801-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -656,9 +654,9 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="uniqueMF803Detail.html"><img src="images/thumbunique/unique-MF803-noframe.png" alt=""></a>
+                                <a href="uniqueMF803Detail.html"><img src="images/thumb-mUnique-MF803-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MF803</dt>
                                         <dd>780,000won</dd>
@@ -667,7 +665,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbunique/unique-MF803-noframe.png">view more</a>
+                                            <a href="images/thumb-mUnique-MF803-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -675,18 +673,18 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="uniqueMD804Detail.html"><img src="images/thumbunique/unique-MD804-noframe.png" alt=""></a>
+                                <a href="uniqueMB804Detail.html"><img src="images/thumb-mUnique-MB804-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
-                                        <dt>MD804</dt>
+                                        <dt>MB804</dt>
                                         <dd>910,000won</dd>
                                         <dd>
                                             <span>
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbunique/unique-MD804-noframe.png">view more</a>
+                                            <a href="images/thumb-mUnique-MB804-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -694,9 +692,9 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="uniqueMB806Detail.html"><img src="images/thumbunique/unique-MB806-noframe.png" alt=""></a>
+                                <a href="uniqueMB806Detail.html"><img src="images/thumb-mUnique-MB806-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MB806</dt>
                                         <dd>950,000won</dd>
@@ -705,7 +703,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbunique/unique-MB806-noframe.png">view more</a>
+                                            <a href="images/thumb-mUnique-MB806-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -713,7 +711,7 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="uniqueMB807Detail.html"><img src="images/thumbunique/unique-MB807-noframe.png" alt=""></a>
+                                <a href="uniqueMB807Detail.html"><img src="images/thumb-mUnique-MB807-noframe.png" alt=""></a>
                                 <figcaption>
                                     <dl>
                                         <dt>MB807</dt>
@@ -723,7 +721,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbunique/unique-MB807-noframe.png">view more</a>
+                                            <a href="images/thumb-mUnique-MB807-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -731,7 +729,7 @@
                         </li>
                         <li>
                             <figure>
-                                <a href="uniqueMB805Detail.html"><img src="images/thumbunique/unique-MB805-noframe.png" alt=""></a>
+                                <a href="uniqueMB805Detail.html"><img src="images/thumb-mUnique-MB805-noframe.png" alt=""></a>
                                 <figcaption>
                                     <dl>
                                         <dt>MB805</dt>
@@ -741,7 +739,7 @@
                                                 <a href="#">#ENTRANCE</a>
                                                 <a href="#">NEW</a>
                                             </span>
-                                            <a href="images/thumbunique/unique-MB805-noframe.png">view more</a>
+                                            <a href="images/thumb-mUnique-MB805-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
@@ -755,7 +753,7 @@
                             <figure>
                                 <a href="flowerMF900Detail.html"><img src="images/thumbflower/flower-MF900-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MF900</dt>
                                         <dd>780,000won</dd>
@@ -774,7 +772,7 @@
                             <figure>
                                 <a href="flowerMD905Detail.html"><img src="images/thumbflower/flower-MD905-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MD905</dt>
                                         <dd>910,000won</dd>
@@ -793,7 +791,7 @@
                             <figure>
                                 <a href="flowerMD904Detail.html"><img src="images/thumbflower/flower-MD904-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MD904</dt>
                                         <dd>910,000won</dd>
@@ -812,7 +810,7 @@
                             <figure>
                                 <a href="flowerMC907Detail.html"><img src="images/thumbflower/flower-MC907-noframe.png" alt=""></a>
                                 <figcaption>
-                                     <mark>BEST</mark>
+                                    <mark>BEST</mark>
                                     <dl>
                                         <dt>MC907</dt>
                                         <dd>1,210,000won</dd>
@@ -874,9 +872,9 @@
                 <span>04</span>
                 <hr>
                 <span>DR.MOON</span>
-             </div>
-             <h2>LANDMARK</h2>
-             <p>Everything about indoor interior doors!</p>
+            </div>
+            <h2>LANDMARK</h2>
+            <p>Everything about indoor interior doors!</p>
 
             <ul class="fadeEffectBox">
                 <!-- 슬라이드개념 아이콘 호버하면  배경이변경됨! 모바일에서는 틀릭 슬라이드 형태 :dd-landmarkPartner$는 아이콘 , indexLandmark$는 배경  -->
@@ -906,9 +904,9 @@
                 <span>05</span>
                 <hr>
                 <span>DR.MOON</span>
-             </div>
-             <h2>Exhibition</h2>
-             <p>Everything about indoor interior doors!</p>
+            </div>
+            <h2>Exhibition</h2>
+            <p>Everything about indoor interior doors!</p>
             <ul>
                 <li>
                     <figure>
@@ -970,6 +968,5 @@
             </span>
         </div>
     </footer>
-
 </body>
 </html>
