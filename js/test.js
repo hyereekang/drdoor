@@ -1,15 +1,12 @@
-$(document).ready(function(){
-  
-        // todo.
-        $('[data-category=ENTRANCE]').click(textChange);
-    });
-    
-    
-    function textChange(){
-        // $('#panel2').css('font-size','30pt').css('color','green');
-        $('mark').css({
-            'font-size':'25px',
-            'color':'green',
-            'font-weight':'bold'
-        });
-    }
+const button = document.querySelector('input');
+const div = document.querySelector('id');
+
+button.addEventListener('click',closePanel);
+
+function closePanel(){
+ div#
+    if (button.value ===)
+}
+
+$( "section" ).data( "test", { first } );
+$( "ul" ).first().text( $( "[data-category=ENTRANCE]" ).data( "test" ).first );
