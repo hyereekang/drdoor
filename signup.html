@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DR.door</title>
+    <title>drdoorIndex</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bxslider.js"></script>
+    <script src="js/test.js"></script>
     <script src="js/jquery.fitvids.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
+
 <body>
     <div id="searchPanel">
         <input type="button" value="closeButton" class="btn_close">
@@ -35,43 +38,43 @@
         <ul>
             <li>
                 <a href="modernMangipAquaDetail.html">
-                    <img src="images/thumb-mModern-aqua-noframe.png" alt="">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="모던아쿠아디테일페이지">
                     Modern-aqua
                 </a>
             </li>
             <li>
                 <a href="modernBronzeDetail.html">
-                    <img src="images/thumb-mModern-bronze-noframe.png" alt="">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="모던브론즈디테일페이지">
                     Modern-bronze
                 </a>
             </li>
             <li>
                 <a href="detailModernMangip.html">
-                    <img src="images/thumb-mModern-mangip-noframe.png" alt="">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="문선생모던망입디테일페이지">
                     Modern-mangip
                 </a>
             </li>
             <li>
                 <a href="modernMB508Detail.html">
-                    <img src="images/thumb-mModern-MB508-noframe.png" alt="">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="모던MB508디테일페이지">
                     Modern-MB508
                 </a>
             </li>
             <li>
                 <a href="modernMSADetail.html">
-                    <img src="images/thumb-mModern-MSA-noframe.png" alt="">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="모던MSA디테일페이지">
                     Modern-MSA
                 </a>
             </li>
             <li>
                 <a href="modernMSFDetail.html">
-                    <img src="images/thumb-mModern-MSF-noframe.png" alt="">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="모던MSF디테일페이지">
                     Modern-MSF
                 </a>
             </li>
         </ul>
-        
-        
+
+
         <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
     </div>
 
@@ -86,7 +89,8 @@
     <header>
         <div>
             <h1>
-                <a href="index.html"><img src="images/header-Logo.png" alt="dr.moon door"></a>
+                <a href="index.html"><img src="images/header-Logo.png"
+                        alt="dr.moon door 홈페이지"></a>
             </h1>
             <nav>
                 <ul>
@@ -120,7 +124,7 @@
                         <li><a href="listUnique.html">Unique</a></li>
                         <li><a href="listFlower.html">Flower</a></li>
                     </ul>
-                </div> 
+                </div>
                 <div id="serviceBox">
                     <h3>Service center</h3>
                     <ul>
@@ -128,7 +132,6 @@
                         <li><a href="doorCare.html">Dr. DoorCare</a></li>
                     </ul>
                 </div>
-                
                 <div id="storeBox">
                     <h3>store</h3>
                     <ul>
@@ -138,8 +141,8 @@
                 </div>
                 <div id="portfolioBox">
                     <h3>casestudy</h3>
-                    <h3>style</h3>
                     <ul>
+                        <h3>style</h3>
                         <li><a href="listModern.html">Modern</a></li>
                         <li><a href="listArt.html">Art</a></li>
                         <li><a href="listClassic.html">Classic</a></li>
@@ -168,6 +171,52 @@
         </div>
     </header>
     <!-- ? header Fin -->
+<h1>MEMBERSHIP</h1>
+<ul>
+    <li><img src="images/signupTermsIcon-dg.png" alt=""><span>Terms</span></li>
+    <li><img src="images/signupInfoIcon-dg.png" alt=""><span>Information</span></li>
+    <li><img src="images/signupCompleteIcon-dg.png" alt=""><span>Complete</span></li>
+</ul>
+
+    
+<form>
+    <h3>Terms and Condition</h3>
+    <fieldset>
+        <div class="all_agree">
+            <input type="checkbox" id="agree_all">
+            <label for="agree_all">Agree to all terms and conditions</label>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="tnc">
+                <label for="tnc">[Required] I agree to the Terms of Use.</label>
+                <a href="">VIEW MORE &gl;</a>
+            </li>
+            <li>
+                <input type="checkbox" id="tnc2">
+                <label for="tnc2">[Required] I agree to the collection and use of personal information.</label>
+                <a href="">VIEW MORE &gl;</a>
+            </li>
+        </ul>
+    </fieldset>
+    <h3>Choose your authentication method</h3>
+    <fieldset>
+        
+        <ul>
+            <li>
+                <img src="images/guidemobileIcon.png" alt="">
+                <span>Mobile</span>
+            </li>
+            <li>
+                <input type="checkbox" id="tnc3">
+                <label for="tnc3">mobile phone authentication</label>
+                <small>The information provided during identity verification is not used or stored for any purpose other than verification.</small>
+            </li>
+        </ul>
+    </fieldset>
+
+</form>
+
     
     <footer>
         <div>
@@ -182,14 +231,16 @@
             </span>
         </div>
         <div>
-            <h2><img src="images/footer-ddLogo.png" alt="DR.moon"></h2>
+            <h2><img src="images/Settings.pngimages/settingfooter-ddLogo.png" alt="DR.moon"></h2>
             <span>
                 <a href="https://pf.kakao.com/_FxePnu">kakaotalk</a>
-                <a href="https://talk.naver.com/WCCFOF?ref='+encodeURIComponent(location.href), 'talktalk', 'width=471, height=640">talktalk</a>
+                <a
+                    href="https://talk.naver.com/WCCFOF?ref='+encodeURIComponent(location.href), 'talktalk', 'width=471, height=640">talktalk</a>
                 <a href="https://www.instagram.com/doordoc.kr/">instagram</a>
             </span>
         </div>
     </footer>
 
 </body>
+
 </html>

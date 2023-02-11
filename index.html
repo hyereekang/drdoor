@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>drdoorIndex</title>
-    <link rel="stylesheet" href="CSS/import.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
     <div id="searchPanel">
@@ -87,7 +91,7 @@
             </h1>
             <nav>
                 <ul>
-                    <li data-gnbPanel="doorBox">Door</li>
+                    <li data-gnbPanel="doorBox" class="activated">Door</li>
                     <li data-gnbPanel="interiorBox">interior</li>
                     <li data-gnbPanel="serviceBox">Service</li>
                     <li data-gnbPanel="storeBox">Store</li>
@@ -157,7 +161,7 @@
                 <li>
                     <a href="mypage.html">Shopping</a>
                 </li>
-                <li><a href="Signup.html">login</a></li>
+                <li><a href="signin.html">login</a></li>
                 <li>
                     <input type="button" value="Search" data-popup="searchPanel">
                 </li>
@@ -273,17 +277,17 @@
                         Flower
                     </li>
                 </ul>
-                <aside>
-                    <h3>
-                        <b> installation case
-                            <small>interlocking door</small>
-                        </b>
-                    </h3>
-                    <a href="InteriorResidentialDress.html">view more &gt;</a>
-                </aside>
                 <div class="caseProduct">
                     <div id="modernCase">
                 
+                        <aside>
+                            <h3>
+                                <b> Modern
+                                    <small>installation case</small>
+                                </b>
+                            </h3>
+                            <a href="listModern.html">view more &gt;</a>
+                        </aside>
                     <ul>
                         <li>
                             <figure>
@@ -359,46 +363,18 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
-                            <figure>
-                                <img src="images/thumb-mModern-Transparency-noframe.png" alt="modernTransparency">
-                                <figcaption>
-                                    <dl>
-                                        <dt>Transparency</dt>
-                                        <dd>780,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="modernTransparencyDetail.html">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="images/thumb-mModern-aqua-noframe.png" alt="modernAqua">
-                                <figcaption>
-                                    <dl>
-                                        <dt>aqua</dt>
-                                        <dd>780,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="modernAquaDetail.html">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
                     </ul>
                     </div>
                     <div id="artCase">
-                    <ul>
+                     <aside>
+                            <h3>
+                                <b> Art
+                                    <small>installation case</small>
+                                </b>
+                            </h3>
+                            <a href="listArt.html">view more &gt;</a>
+                        </aside>
+                        <ul>
                         <li>
                             <figure>
                                 <img src="images/thumb-mArt-ME611-noframe.png" alt="artME611">
@@ -475,48 +451,20 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
-                            <figure>
-                                <img src="images/thumb-mArt-MA633-noframe.png" alt="artMA633">
-                                <figcaption>
-                                    <dl>
-                                        <dt>MA633</dt>
-                                        <dd>960,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="artMA633Detail.html">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <img src="images/thumb-mArt-MB629-noframe.png" alt="artMB629">
-                                <figcaption>
-                                    <dl>
-                                        <dt>MB629</dt>
-                                        <dd>950,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="artMB629Detail.html">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
                     </ul>
                     </div>
 
                     <!-- 여기까지 진짜 링크명 수정 -->
                     <div id="classicCase">
-                    <ul>
+                     <aside>
+                            <h3>
+                                <b> Classic
+                                    <small>installation case</small>
+                                </b>
+                            </h3>
+                            <a href="listClassic.html">view more &gt;</a>
+                        </aside>
+                        <ul>
                         <li>
                             <figure>
                                 <a href="classicMD701Detail.html"><img src="images/thumb-mClassic-MD701-noframe.png" alt=""></a>
@@ -593,46 +541,18 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
-                            <figure>
-                                <a href="classicMD705Detail.html"><img src="images/thumb-mClassic-MD705-noframe.png" alt=""></a>
-                                <figcaption>
-                                    <dl>
-                                        <dt>MD705</dt>
-                                        <dd>950,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="images/thumb-mClassic-MD705-noframe.png">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="classicMD704Detail.html"><img src="images/thumb-mClassic-MD704-noframe.png" alt=""></a>
-                                <figcaption>
-                                    <dl>
-                                        <dt>MD704</dt>
-                                        <dd>910,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="images/thumb-mClassic-MD704-noframe.png">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
                     </ul>
                     </div>
                     <div id="uniqueCase">
-                    <ul>
+                     <aside>
+                            <h3>
+                                <b> Unique
+                                    <small>installation case</small>
+                                </b>
+                            </h3>
+                            <a href="listUnique.html">view more &gt;</a>
+                        </aside>
+                        <ul>
                         <li>
                             <figure>
                                 <a href="uniqueMF801Detail.html"><img src="images/thumb-mUnique-MF801-noframe.png" alt=""></a>
@@ -709,46 +629,18 @@
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
-                            <figure>
-                                <a href="uniqueMB807Detail.html"><img src="images/thumb-mUnique-MB807-noframe.png" alt=""></a>
-                                <figcaption>
-                                    <dl>
-                                        <dt>MB807</dt>
-                                        <dd>950,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="images/thumb-mUnique-MB807-noframe.png">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="uniqueMB805Detail.html"><img src="images/thumb-mUnique-MB805-noframe.png" alt=""></a>
-                                <figcaption>
-                                    <dl>
-                                        <dt>MB805</dt>
-                                        <dd>950,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="images/thumb-mUnique-MB805-noframe.png">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
                     </ul>
                     </div>
                     <div id="flowerCase">
-                    <ul>
+                     <aside>
+                            <h3>
+                                <b> Flower
+                                    <small>installation case</small>
+                                </b>
+                            </h3>
+                            <a href="listFlower.html">view more &gt;</a>
+                        </aside>
+                        <ul>
                         <li>
                             <figure>
                                 <a href="flowerMF900Detail.html"><img src="images/thumbflower/flower-MF900-noframe.png" alt=""></a>
@@ -820,42 +712,6 @@
                                                 <a href="#">NEW</a>
                                             </span>
                                             <a href="images/thumbflower/flower-MC907-noframe.png">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="flowerMF900Detail.html"><img src="images/thumbflower/flower-Transparency-noframe.png" alt=""></a>
-                                <figcaption>
-                                    <dl>
-                                        <dt>Transparency</dt>
-                                        <dd>780,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="images/thumbflower/flower-Transparency-noframe.png">view more</a>
-                                        </dd>
-                                    </dl>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <a href="flowerMF900Detail.html"><img src="images/thumbflower/flower-aqua-noframe.png" alt=""></a>
-                                <figcaption>
-                                    <dl>
-                                        <dt>aqua</dt>
-                                        <dd>780,000won</dd>
-                                        <dd>
-                                            <span>
-                                                <a href="#">#ENTRANCE</a>
-                                                <a href="#">NEW</a>
-                                            </span>
-                                            <a href="images/thumbflower/flower-aqua-noframe.png">view more</a>
                                         </dd>
                                     </dl>
                                 </figcaption>
