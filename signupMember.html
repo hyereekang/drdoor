@@ -172,50 +172,75 @@
     <!-- ? header Fin -->
     <h1>MEMBERSHIP</h1>
     <ul>
-        <li class="activated"><img src="images/signupTermsIcon-wh.png" alt=""><span>Terms</span></li>
-        <li><img src="images/signupInfoIcon-dg.png" alt=""><span>Information</span></li>
+        <li><img src="images/signupTermsIcon-dg.png" alt=""><span>Terms</span></li>
+        <li class="activated"><img src="images/signupInfoIcon-wh.png" alt=""><span>Information</span></li>
         <li><img src="images/signupCompleteIcon-dg.png" alt=""><span>Complete</span></li>
     </ul>
 
 
     <form>
-        <h3>Terms and Condition</h3>
+        <h3>Enter member information</h3> 
         <fieldset>
-            <div class="all_agree">
-                <input type="checkbox" id="agree_all">
-                <label for="agree_all">Agree to all terms and conditions</label>
-            </div>
             <ul>
                 <li>
-                    <input type="checkbox" id="tnc">
-                    <label for="tnc">[Required] I agree to the Terms of Use.</label>
-                    <a href="guide.html">VIEW MORE &gl;</a>
+                    <label for="userID">User ID</label>
+                    <input type="text" id="userID" placeholder="English lowercase numbers">
+                    <button id="btnConfirm" data-testid="btnConfirm">Confirm</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="tnc2">
-                    <label for="tnc2">[Required] I agree to the collection and use of personal information.</label>
-                    <a href="guide.html">VIEW MORE &gl;</a>
+                    <label for="userPW">User Password</label>
+                    <input type="password" id="userPW" placeholder="special character 8-16"><span>*Only special characters are allowed</span>
+                </li>
+                <li>
+                    <label for="userPW">password Check</label>
+                    <input type="password" id="userPW" placeholder="Please re-enter the password you entered">
+                </li>
+                <li>
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" maxlength="8">
+                </li>
+                <li>
+                    <label for="userEmail1">Email</label>
+                    <input type="email" id="userEmail1">@
+                    <input type="email" id="userEmail2" placeholder="직접입력하세요">
+                    <select title="이메일" id="userEmail3">
+                        <option value="">선택하세요</option>
+                        <option value="직접입력">직접입력</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="dreamwiz.com">dreamwiz.com</option>
+                        <option value="yahoo.co.kr">yahoo.co.kr</option>
+                        <option value="empal.com">empal.com</option>
+                        <option value="paran.com">paran.com</option>
+                        <option value="freechal.com">freechal.com</option>
+                        <option value="korea.com">korea.com</option>
+                        <option value="hanafos.com">hanafos.com</option>
+                        <option value="hotmail.com">hotmail.com</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="phoneNumb">Mobile</label>
+                    <input type="text" id="phoneNumb" placeholder="000-0000-0000">
+                    <button id="btnConfirm" data-testid="btnConfirm">Confirm</button>
+                </li>
+                <li>
+                    <label for="phoneNumb2">Phone</label>
+                    <input type="text" id="phoneNumb2" placeholder="000-0000-0000">
+                </li>
+                <li>
+                    <label for="addressType">Address</label>
+                    <input type="tel" id="addressType" placeholder="Zip code">
+                    <button id="btnConfirm" data-testid="btnFindadd">Search</button>
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="City/Country">
+                </li>
+                <li>
+                    <a href="signin.html">PREV</a>
+                    <a href="signupMember.html">NEXT</a>
                 </li>
             </ul>
-        </fieldset>
-        <h3>Choose your authentication method</h3>
-        <fieldset>
-
-            <ul>
-                <li>
-                    <img src="images/guidemobileIcon.png" alt="">
-                    <span>Mobile</span>
-                </li>
-                <li>
-                    <input type="checkbox" id="tnc3">
-                    <label for="tnc3">mobile phone authentication</label>
-                    <small>The information provided during identity verification is not used or stored for any purpose
-                        other than verification.</small>
-                </li>
-            </ul>
-            <a href="signin.html">PREV</a>
-            <a href="signupMember.html">NEXT</a>
-            <!-- <input type="submit" value="NEXT"> -->
         </fieldset>
 
     </form>

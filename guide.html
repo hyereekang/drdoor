@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drdoorIndex</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div id="searchPanel">
+        <input type="button" value="closeButton" class="btn_close">
+        <h2>
+            What are you looking for?
+            <a href="">view more &gt;</a>
+        </h2>
+        <form>
+            <label for="searchField">Search for a product</label>
+            <input type="search" id="searchField">
+            <input type="submit" value="Search">
+        </form>
+        <div>
+            <h3>Are there any categories you are looking for?</h3>
+            <ul>
+                <li class="active">#ENTRANCE</li>
+                <li>#SLIDING</li>
+                <li>#SWINGING</li>
+                <li>#HANGER</li>
+                <li>#3INTERLOCKING</li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a href="modernMangipAquaDetail.html">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="모던아쿠아디테일페이지">
+                    Modern-aqua
+                </a>
+            </li>
+            <li>
+                <a href="modernBronzeDetail.html">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="모던브론즈디테일페이지">
+                    Modern-bronze
+                </a>
+            </li>
+            <li>
+                <a href="detailModernMangip.html">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="문선생모던망입디테일페이지">
+                    Modern-mangip
+                </a>
+            </li>
+            <li>
+                <a href="modernMB508Detail.html">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="모던MB508디테일페이지">
+                    Modern-MB508
+                </a>
+            </li>
+            <li>
+                <a href="modernMSADetail.html">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="모던MSA디테일페이지">
+                    Modern-MSA
+                </a>
+            </li>
+            <li>
+                <a href="modernMSFDetail.html">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="모던MSF디테일페이지">
+                    Modern-MSF
+                </a>
+            </li>
+        </ul>
+
+
+        <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
+    </div>
+
+    <ul class="sideNav">
+        <li><a href="index_after.html">home</a></li>
+        <li><a href="talktalkURL">message</a></li>
+        <li><a href="files/fileName.ext">download</a></li>
+        <li data-panel="searchPanel">cart <span>99</span></li>
+    </ul>
+    <!-- popup,panel 구조 -->
+    <a href="#" class="btn_top">top</a>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html"><img src="images/header-Logo.png"
+                        alt="dr.moon door 홈페이지"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li data-gnbPanel="doorBox">Door</li>
+                    <li data-gnbPanel="interiorBox">interior</li>
+                    <li data-gnbPanel="serviceBox">Service</li>
+                    <li data-gnbPanel="storeBox">Store</li>
+                    <li data-gnbPanel="portfolioBox">Casestudy</li>
+                    <li data-gnbPanel="newsBox">News</li>
+                </ul>
+                <!-- click을 했을 때 열어야 하는 경우 -> 버튼: data-xxx="열리는아이디명" 열리는 대상: id="열리는아이디명" -->
+                <div id="doorBox">
+                    <h2>Dr. Moon story</h2>
+                    <ul>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="IR.html">IR</a></li>
+                        <li><a href="History.html">History</a></li>
+                    </ul>
+                </div>
+                <div id="interiorBox">
+                    <h2>installation case</h2>
+                    <ul>
+                        <li><a href="InteriorCommercial.html">Commercial Space</a></li>
+                        <li><a href="InteriorResidentialDress.html">Residential Space</a></li>
+                    </ul>
+                    <h2>style</h2>
+                    <ul>
+                        <li><a href="listModern.html">Modern</a></li>
+                        <li><a href="listArt.html">Art</a></li>
+                        <li><a href="listClassic.html">Classic</a></li>
+                        <li><a href="listUnique.html">Unique</a></li>
+                        <li><a href="listFlower.html">Flower</a></li>
+                    </ul>
+                </div>
+                <div id="serviceBox">
+                    <h3>Service center</h3>
+                    <ul>
+                        <li><a href="QnA.html">1:1 Inquiry Board</a></li>
+                        <li><a href="doorCare.html">Dr. DoorCare</a></li>
+                    </ul>
+                </div>
+                <div id="storeBox">
+                    <h3>store</h3>
+                    <ul>
+                        <li><a href="showRoom.html">Showroom</a></li>
+                        <li><a href="Store.html">Location</a></li>
+                    </ul>
+                </div>
+                <div id="portfolioBox">
+                    <h3>casestudy</h3>
+                    <ul>
+                        <h3>style</h3>
+                        <li><a href="listModern.html">Modern</a></li>
+                        <li><a href="listArt.html">Art</a></li>
+                        <li><a href="listClassic.html">Classic</a></li>
+                        <li><a href="listUnique.html">Unique</a></li>
+                        <li><a href="listFlower.html">Flower</a></li>
+                    </ul>
+                </div>
+                <div id="newsBox">
+                    <h3>News</h3>
+                    <ul>
+                        <li><a href="eventPromotion.html">Event / Promotion</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="customerReview.html">Customer Review</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul>
+                <li>
+                    <a href="mypage.html">Shopping</a>
+                </li>
+                <li><a href="signin.html">login</a></li>
+                <li>
+                    <input type="button" value="Search" data-popup="searchPanel">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- ? header Fin -->
+<h3>Terms and Conditions</h3>
+<ul>
+    <li>
+    <strong>1 Purpose</strong><br> 
+
+        These terms and conditions govern the use of Internet-related services (hereinafter referred to as "services") provided by Mr. Moon's cyber mall (hereinafter referred to as "mall") operated by NUGUNA DECO (electronic transaction operator). Its purpose is to stipulate the rights, duties and responsibilities of users.<br>
+        ※ 「These terms and conditions apply mutatis mutandis to electronic transactions using PC communications, etc., as long as they are not contrary to their nature.」
+    </li>   
+    <li> 
+        <strong> 2 (Definition)</strong><br>
+        
+        ① "Mall" refers to a virtual business place set up by NUGUNA DECO to trade goods or services using information and communication facilities such as computers to provide goods or services to users. It is also used in the meaning of a business operator.<br>
+        ② "User" refers to members and non-members who access the "mall" and receive the services provided by the "mall" in accordance with these terms and conditions.<br>
+        ③ 'Member' refers to a person who has registered as a member by providing personal information to the "Mall", continuously receives information from the "Mall" and can continue to use the services provided by the "Mall".<br>
+        ④ 'Non-member' refers to a person who uses the services provided by the "Mall" without subscribing to membership.
+    </li>    
+     <li>   
+        <strong> 3 (Specification, Explanation and Revision of Terms and Conditions, etc.)</strong><br>
+        
+        ① "Mall" refers to the contents of these terms and conditions, trade name and representative name, business address (including the address where consumer complaints can be handled), phone number, fax number, e-mail address, business registration number, communication The sales business report number and personal information manager are posted on the initial service screen (front) of the "mall" so that users can easily know. However, the contents of the terms and conditions can be viewed by the user through the connection screen.<br>
+        ② "Mall" provides a separate connection screen or pop-up screen so that users can understand important contents such as withdrawal of subscription, delivery responsibility, refund conditions, etc. You need to ask for confirmation.<br>
+        ③ "Mall" does not violate relevant laws such as the Consumer Protection Act in Electronic Commerce, the Regulation of Terms and Conditions, the Framework Act on Electronic Commerce, the Electronic Signature Act, the Act on Promotion of Information and Communications Network Utilization, the Act on Door-to-Door Sales, etc., and the Consumer Protection Act. These terms and conditions may be amended to the extent not specified.<br>
+        ④ If the "mall" revises the terms and conditions, the date of application and the reason for the revision shall be specified and announced along with the current terms and conditions on the initial screen of the mall from 7 days before the effective date to the day before the effective date.<br>
+        However, if the contents of the terms and conditions are changed unfavorably to the user, it will be notified with a grace period of at least 30 days in advance. In this case, the "mall" clearly compares the content before and after the revision and displays it so that users can easily understand.<br>
+        ⑤ If the "Mall" amends the terms and conditions, the revised terms and conditions apply only to contracts concluded after the date of application, and the provisions of the terms and conditions prior to the revision are applied to contracts already concluded prior to that date. However, if a user who has already entered into a contract transmits his or her wish to be subject to the provisions of the amended terms and conditions to the "mall" within the notice period of the amended terms and conditions under paragraph 3 and receives the consent of the "mall", the provisions of the amended terms and conditions apply. It's possible.<br>
+        ⑥ Matters not specified in these Terms and Conditions and interpretation of these Terms and Conditions shall be governed by the Act on Consumer Protection in Electronic Commerce, etc., the Act on Regulation of Terms and Conditions, the Consumer Protection Guidelines in Electronic Commerce, etc. set by the Fair Trade Commission, and related laws or commercial practices. follow
+    </li>    
+    <li>  
+        <strong> 4 (Provision and Change of Service)</strong><br>
+        
+        ① "Mall" performs the following tasks.<br>
+        1. Provision of information on goods or services and conclusion of purchase contract<br>
+        2. Delivery of goods or services for which a purchase contract has been concluded<br>
+        3. Other tasks designated by "mall"<br>
+        ② "Mall" may change the contents of goods or services to be provided by contracts to be concluded in the event of a product or service being out of stock or a change in technical specifications. In this case, the contents of the changed goods or services and the delivery date are specified and immediately notified to the place where the contents of the current goods or services are posted.<br>
+        ③ If the contents of the service contracted with the user by the "mall" are changed for reasons such as out of stock or change in technical specifications, the reason is immediately notified to the address where the user can be notified.<br>
+        ④ In the case of the preceding paragraph, the "Mall" compensates for damages suffered by the user. However, this is not the case if the "Mall" proves that there is no intention or negligence.
+    </li>    
+     <li>   
+        <strong> 5 (Suspension of Service)</strong><br>
+        
+        ① "Mall" may temporarily suspend the provision of services in the event of maintenance, replacement, breakdown of information and communication facilities such as computers, or loss of communication.<br>
+        ② "Mall" compensates for damages suffered by users or third parties due to temporary suspension of service provision due to the reason in Paragraph 1. However, this is not the case if the "Mall" proves that there is no intention or negligence.<br>
+        ③ In the event that the service cannot be provided due to the conversion of business items, abandonment of business, integration between companies, etc., the "mall" notifies the user in the manner set forth in 8 and the consumer according to the conditions initially suggested by the "mall". reward to However, if the "mall" does not notify the compensation standards, etc., the mileage or reserves of users are paid to the user in kind or cash equivalent to the currency value used in the "mall".
+     </li>   
+    <li> 
+        <strong> 6 (Member Registration)</strong><br>
+        
+        ① The user applies for membership by filling in the member information according to the sign-up form set by the "mall" and expressing his/her intention to agree to these terms and conditions.<br>
+        ② "Mall" registers as a member unless it falls under each of the following among users who have applied to join as a member as in Paragraph 1.<br>
+        1. If the applicant for membership has previously lost membership in accordance with article 7, Paragraph 3 of these Terms and Conditions, but 3 years have passed since the loss of membership in accordance with article 7, Paragraph 3, approval of membership re-registration of "Mall" Exceptions are made in cases where<br>
+        2. If there is falsehood, omission, or typo in the registration information<br>
+        3. If it is judged that registration as a member is significantly impeded by the technology of the "mall"<br>
+        ③ The time of establishment of the membership contract is when the consent of the "mall" reaches the member.<br>
+        ④ If there is a change in the registered information pursuant to article 15, Paragraph 1, the member must immediately notify the "mall" of the change by e-mail or other method.
+    </li>   
+    <li>   
+        <strong> 7 (Withdrawal from Membership and Loss of Qualification, etc.)</strong><br>
+        
+        ① Members may request membership withdrawal at any time to the "Mall", and the "Mall" will process the withdrawal immediately.<br>
+        ② If a member falls under any of the following reasons, "mall" may restrict or suspend membership.<br>
+        1. In the case of registering false information when applying for membership<br>
+        2. If the payment for goods purchased using the "mall" and other debts borne by the member in relation to the use of the "mall" are not paid on time<br>
+        3. Threatening the order of e-commerce, such as interfering with the use of "mall" by others or stealing the information<br>
+        4. In the case of using the "Mall" to act against the law or these Terms and Conditions or against public order and morals<br>
+        ③ After "Mall" restricts or suspends membership, if the same action is repeated twice or more, or if the cause is not corrected within 30 days, "Mall" may lose membership.<br>
+        ④ If the "mall" loses membership, membership registration is canceled. In this case, the member is notified of this, and a period of at least 30 days or more is set before membership registration is canceled to give the member an opportunity to explain.
+    </li>    
+    <li> 
+        <strong> 8 (Notification to Members)</strong><br>
+        
+        ① If the "mall" notifies the member, the member can do it to the e-mail address specified by the member in advance with the "mall".<br>
+        ② "Mall" can be substituted for individual notices by posting on the "Mall" bulletin board for more than one week in case of notice to unspecified members. However, individual notices are given for matters that have a significant impact on the member's own transaction.
+    </li>    
+    <li>   
+        <strong> 9 (Purchase Request)</strong><br>
+         "Mall" users apply for purchases on the "Mall" by the following or similar methods, and the "Mall" must provide each of the following contents in an easy-to-understand manner when the user applies for purchase. However, if you are a member, you can exclude the application of items 2 through 4.<br>
+        1. Search and selection of goods, etc.<br>
+        2. Enter name, address, phone number, e-mail address (or mobile phone number), etc.<br>
+        3. Confirmation of contents related to the content of the terms and conditions, services for which the right to withdraw subscription is limited, and burden of expenses such as shipping and installation fees<br>
+        4. Indicate that you agree to these terms and conditions and confirm or reject the items in 3. above (eg, mouse click)<br>
+        5. Consent to request for purchase of goods, etc. and confirmation thereof or confirmation of "Mall"<br>
+        6. Selection of payment method
+    </li>    
+    <li>   
+        <strong> 10 (Establishment of Contract)</strong><br>
+        
+        ① "Mall" may not accept a purchase request as in article 9 if it falls under any of the following items. However, in the case of signing a contract with a minor, you must notify that the minor or his or her legal representative may cancel the contract if the consent of the legal representative is not obtained.<br>
+        1. If there is falsehood, omission, or typo in the application<br>
+        2. When a minor purchases goods and services prohibited by the Juvenile Protection Act, such as cigarettes and alcohol<br>
+        3. If it is judged that accepting other purchase requests is significantly impeded by "Mall" technology<br>
+        ② The contract is considered to be concluded when the consent of the "mall" reaches the user in the form of confirmation of receipt in article 12 (1).<br>
+        ③ The "mall"'s declaration of intent to accept must include information on the confirmation of the user's purchase request, whether or not it is available for sale, correction and cancellation of the purchase request, etc.
+    </li>    
+    <li>    
+        <strong> 11 (Payment method)</strong>
+        <br> The payment method for goods or services purchased in the "mall" can be made by any of the following methods. However, "Mall" cannot collect any nominal fee in addition to the price of goods, etc. for the user's payment method.<br>
+        1. Various account transfers such as phone banking, internet banking, and mail banking<br>
+        2. Payment by various cards such as prepaid cards, debit cards, and credit cards<br>
+        3. Online deposit without a bankbook<br>
+        4. Payment by electronic money<br>
+        5. Payment upon receipt<br>
+        6. Payment by points paid by "mall" such as mileage<br>
+        7. Payment by gift certificate contracted with "Mall" or recognized by "Mall"<br>
+        8. Payment by other electronic payment methods, etc.
+    </li>    
+    <li>    
+        <strong> 12 (Receipt Confirmation Notification, Purchase Request Change and Cancellation)</strong><br>
+        
+        ① "Mall" notifies the user of receipt confirmation when there is a user's purchase request.<br>
+        ② Receipt confirmation notice
+    </li>
+</ul>
+
+
+    
+    <footer>
+        <div>
+            <ul>
+                <li><a href="terms-and-condition02.html"> personal protection policy</a></li>
+                <li><a href="terms-and-condition02.html">user guide</a></li>
+                <li><a href="terms-and-condition02.html">terms and conditions</a></li>
+            </ul>
+            <span>
+                <b>account information : 1005-903-070171</b>
+                <a href="tel:+8215773195">customer center : 1577-3195</a>
+            </span>
+        </div>
+        <div>
+            <h2><img src="images/Settings.pngimages/settingfooter-ddLogo.png" alt="DR.moon"></h2>
+            <span>
+                <a href="https://pf.kakao.com/_FxePnu">kakaotalk</a>
+                <a
+                    href="https://talk.naver.com/WCCFOF?ref='+encodeURIComponent(location.href), 'talktalk', 'width=471, height=640">talktalk</a>
+                <a href="https://www.instagram.com/doordoc.kr/">instagram</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

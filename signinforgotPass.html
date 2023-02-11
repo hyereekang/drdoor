@@ -89,7 +89,8 @@
     <header>
         <div>
             <h1>
-                <a href="index.html"><img src="images/header-Logo.png" alt="dr.moon door 홈페이지"></a>
+                <a href="index.html"><img src="images/header-Logo.png"
+                        alt="dr.moon door 홈페이지"></a>
             </h1>
             <nav>
                 <ul>
@@ -170,57 +171,26 @@
         </div>
     </header>
     <!-- ? header Fin -->
-    <h1>MEMBERSHIP</h1>
+
+
+<h1>Find Your Password</h1>
+
+<nav>
     <ul>
-        <li class="activated"><img src="images/signupTermsIcon-wh.png" alt=""><span>Terms</span></li>
-        <li><img src="images/signupInfoIcon-dg.png" alt=""><span>Information</span></li>
-        <li><img src="images/signupCompleteIcon-dg.png" alt=""><span>Complete</span></li>
+        <li><strong>Insert your ID</strong>  Enter the ID you want to find the password for</li>
     </ul>
-
-
-    <form>
-        <h3>Terms and Condition</h3>
-        <fieldset>
-            <div class="all_agree">
-                <input type="checkbox" id="agree_all">
-                <label for="agree_all">Agree to all terms and conditions</label>
-            </div>
-            <ul>
-                <li>
-                    <input type="checkbox" id="tnc">
-                    <label for="tnc">[Required] I agree to the Terms of Use.</label>
-                    <a href="guide.html">VIEW MORE &gl;</a>
-                </li>
-                <li>
-                    <input type="checkbox" id="tnc2">
-                    <label for="tnc2">[Required] I agree to the collection and use of personal information.</label>
-                    <a href="guide.html">VIEW MORE &gl;</a>
-                </li>
-            </ul>
-        </fieldset>
-        <h3>Choose your authentication method</h3>
-        <fieldset>
-
-            <ul>
-                <li>
-                    <img src="images/guidemobileIcon.png" alt="">
-                    <span>Mobile</span>
-                </li>
-                <li>
-                    <input type="checkbox" id="tnc3">
-                    <label for="tnc3">mobile phone authentication</label>
-                    <small>The information provided during identity verification is not used or stored for any purpose
-                        other than verification.</small>
-                </li>
-            </ul>
-            <a href="signin.html">PREV</a>
-            <a href="signupMember.html">NEXT</a>
-            <!-- <input type="submit" value="NEXT"> -->
-        </fieldset>
-
-    </form>
-
-
+</nav>
+<form action="">
+    <fieldset>
+        <ul>
+            <li><label for="userID">id</label>
+                <input type="text" id="userID" maxlength="8" placeholder="0000@naver.com">
+            </li>
+        </ul>
+        <input type="submit" value="Next">
+        <a href="signupComplete.html">If you can't remember your ID?</a>
+    </fieldset>
+</form>
     <footer>
         <div>
             <ul>

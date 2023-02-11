@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>drdoorIndex</title>
+    <title>drdoor</title>
+</head>
+<body>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bxslider.js"></script>
     <script src="js/test.js"></script>
     <script src="js/jquery.fitvids.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
-
 <body>
     <div id="searchPanel">
         <input type="button" value="closeButton" class="btn_close">
@@ -38,43 +38,43 @@
         <ul>
             <li>
                 <a href="modernMangipAquaDetail.html">
-                    <img src="images/thumb-mModern-aqua-noframe.png" alt="모던아쿠아디테일페이지">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="mModern">
                     Modern-aqua
                 </a>
             </li>
             <li>
                 <a href="modernBronzeDetail.html">
-                    <img src="images/thumb-mModern-bronze-noframe.png" alt="모던브론즈디테일페이지">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="">
                     Modern-bronze
                 </a>
             </li>
             <li>
                 <a href="detailModernMangip.html">
-                    <img src="images/thumb-mModern-mangip-noframe.png" alt="문선생모던망입디테일페이지">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="">
                     Modern-mangip
                 </a>
             </li>
             <li>
                 <a href="modernMB508Detail.html">
-                    <img src="images/thumb-mModern-MB508-noframe.png" alt="모던MB508디테일페이지">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="">
                     Modern-MB508
                 </a>
             </li>
             <li>
                 <a href="modernMSADetail.html">
-                    <img src="images/thumb-mModern-MSA-noframe.png" alt="모던MSA디테일페이지">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="">
                     Modern-MSA
                 </a>
             </li>
             <li>
                 <a href="modernMSFDetail.html">
-                    <img src="images/thumb-mModern-MSF-noframe.png" alt="모던MSF디테일페이지">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="">
                     Modern-MSF
                 </a>
             </li>
         </ul>
-
-
+        
+        
         <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
     </div>
 
@@ -89,11 +89,11 @@
     <header>
         <div>
             <h1>
-                <a href="index.html"><img src="images/header-Logo.png" alt="dr.moon door 홈페이지"></a>
+                <a href="index.html"><img src="images/header-Logo.png" alt="dr.moon door"></a>
             </h1>
             <nav>
                 <ul>
-                    <li data-gnbPanel="doorBox">Door</li>
+                    <li data-gnbPanel="doorBox" class="activated">Door</li>
                     <li data-gnbPanel="interiorBox">interior</li>
                     <li data-gnbPanel="serviceBox">Service</li>
                     <li data-gnbPanel="storeBox">Store</li>
@@ -123,7 +123,7 @@
                         <li><a href="listUnique.html">Unique</a></li>
                         <li><a href="listFlower.html">Flower</a></li>
                     </ul>
-                </div>
+                </div> 
                 <div id="serviceBox">
                     <h3>Service center</h3>
                     <ul>
@@ -131,6 +131,7 @@
                         <li><a href="doorCare.html">Dr. DoorCare</a></li>
                     </ul>
                 </div>
+                
                 <div id="storeBox">
                     <h3>store</h3>
                     <ul>
@@ -170,80 +171,36 @@
         </div>
     </header>
     <!-- ? header Fin -->
-    <h1>MEMBERSHIP</h1>
-    <ul>
-        <li class="activated"><img src="images/signupTermsIcon-wh.png" alt=""><span>Terms</span></li>
-        <li><img src="images/signupInfoIcon-dg.png" alt=""><span>Information</span></li>
-        <li><img src="images/signupCompleteIcon-dg.png" alt=""><span>Complete</span></li>
-    </ul>
-
-
-    <form>
-        <h3>Terms and Condition</h3>
-        <fieldset>
-            <div class="all_agree">
-                <input type="checkbox" id="agree_all">
-                <label for="agree_all">Agree to all terms and conditions</label>
+    
+    <section class="newsEvent">
+        <div class="bgTitle">
+            <div class="small-title">
+                <span>DR.MOON</span>
+                <hr>
+                <span>NEWS</span>
             </div>
-            <ul>
-                <li>
-                    <input type="checkbox" id="tnc">
-                    <label for="tnc">[Required] I agree to the Terms of Use.</label>
-                    <a href="guide.html">VIEW MORE &gl;</a>
-                </li>
-                <li>
-                    <input type="checkbox" id="tnc2">
-                    <label for="tnc2">[Required] I agree to the collection and use of personal information.</label>
-                    <a href="guide.html">VIEW MORE &gl;</a>
-                </li>
-            </ul>
-        </fieldset>
-        <h3>Choose your authentication method</h3>
-        <fieldset>
-
-            <ul>
-                <li>
-                    <img src="images/guidemobileIcon.png" alt="">
-                    <span>Mobile</span>
-                </li>
-                <li>
-                    <input type="checkbox" id="tnc3">
-                    <label for="tnc3">mobile phone authentication</label>
-                    <small>The information provided during identity verification is not used or stored for any purpose
-                        other than verification.</small>
-                </li>
-            </ul>
-            <a href="signin.html">PREV</a>
-            <a href="signupMember.html">NEXT</a>
-            <!-- <input type="submit" value="NEXT"> -->
-        </fieldset>
-
-    </form>
-
-
-    <footer>
-        <div>
-            <ul>
-                <li><a href="terms-and-condition02.html"> personal protection policy</a></li>
-                <li><a href="terms-and-condition02.html">user guide</a></li>
-                <li><a href="terms-and-condition02.html">terms and conditions</a></li>
-            </ul>
-            <span>
-                <b>account information : 1005-903-070171</b>
-                <a href="tel:+8215773195">customer center : 1577-3195</a>
-            </span>
+            <h2>Service</h2>
         </div>
-        <div>
-            <h2><img src="images/Settings.pngimages/settingfooter-ddLogo.png" alt="DR.moon"></h2>
-            <span>
-                <a href="https://pf.kakao.com/_FxePnu">kakaotalk</a>
-                <a
-                    href="https://talk.naver.com/WCCFOF?ref='+encodeURIComponent(location.href), 'talktalk', 'width=471, height=640">talktalk</a>
-                <a href="https://www.instagram.com/doordoc.kr/">instagram</a>
-            </span>
-        </div>
-    </footer>
+        <ul class="selective">
+            <li>
+                <a href="#">
+                    EventPromotion
+                </a>
+            </li>
+            <li>
+                <a href="customerReview.html">
+                    Customer Review
+                </a>
+            </li>
+            <li>
+                <a href="community.html">
+                    Community Service
+                </a>
+            </li>
+        </ul> 
 
+        <h2><small>DOOR CARE SERVICE</small>Event Promotion</h2>
+        <p>Interior effect as well as thermal insulation effect</p>
+    </section>
 </body>
-
 </html>
