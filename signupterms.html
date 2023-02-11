@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drdoorIndex</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bxslider.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+
+<body>
+    <div id="searchPanel">
+        <input type="button" value="closeButton" class="btn_close">
+        <h2>
+            What are you looking for?
+            <a href="">view more &gt;</a>
+        </h2>
+        <form>
+            <label for="searchField">Search for a product</label>
+            <input type="search" id="searchField">
+            <input type="submit" value="Search">
+        </form>
+        <div>
+            <h3>Are there any categories you are looking for?</h3>
+            <ul>
+                <li class="active">#ENTRANCE</li>
+                <li>#SLIDING</li>
+                <li>#SWINGING</li>
+                <li>#HANGER</li>
+                <li>#3INTERLOCKING</li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a href="modernMangipAquaDetail.html">
+                    <img src="images/thumb-mModern-aqua-noframe.png" alt="모던아쿠아디테일페이지">
+                    Modern-aqua
+                </a>
+            </li>
+            <li>
+                <a href="modernBronzeDetail.html">
+                    <img src="images/thumb-mModern-bronze-noframe.png" alt="모던브론즈디테일페이지">
+                    Modern-bronze
+                </a>
+            </li>
+            <li>
+                <a href="detailModernMangip.html">
+                    <img src="images/thumb-mModern-mangip-noframe.png" alt="문선생모던망입디테일페이지">
+                    Modern-mangip
+                </a>
+            </li>
+            <li>
+                <a href="modernMB508Detail.html">
+                    <img src="images/thumb-mModern-MB508-noframe.png" alt="모던MB508디테일페이지">
+                    Modern-MB508
+                </a>
+            </li>
+            <li>
+                <a href="modernMSADetail.html">
+                    <img src="images/thumb-mModern-MSA-noframe.png" alt="모던MSA디테일페이지">
+                    Modern-MSA
+                </a>
+            </li>
+            <li>
+                <a href="modernMSFDetail.html">
+                    <img src="images/thumb-mModern-MSF-noframe.png" alt="모던MSF디테일페이지">
+                    Modern-MSF
+                </a>
+            </li>
+        </ul>
+
+
+        <!-- 눌렀을 때 현재 페이지에서 뜨면 그건 input:button. / 눌렀을 때 이동 a. -->
+    </div>
+
+    <ul class="sideNav">
+        <li><a href="index_after.html">home</a></li>
+        <li><a href="talktalkURL">message</a></li>
+        <li><a href="files/fileName.ext">download</a></li>
+        <li data-panel="searchPanel">cart <span>99</span></li>
+    </ul>
+    <!-- popup,panel 구조 -->
+    <a href="#" class="btn_top">top</a>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html"><img src="images/header-Logo.png"
+                        alt="dr.moon door 홈페이지"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li data-gnbPanel="doorBox">Door</li>
+                    <li data-gnbPanel="interiorBox">interior</li>
+                    <li data-gnbPanel="serviceBox">Service</li>
+                    <li data-gnbPanel="storeBox">Store</li>
+                    <li data-gnbPanel="portfolioBox">Casestudy</li>
+                    <li data-gnbPanel="newsBox">News</li>
+                </ul>
+                <!-- click을 했을 때 열어야 하는 경우 -> 버튼: data-xxx="열리는아이디명" 열리는 대상: id="열리는아이디명" -->
+                <div id="doorBox">
+                    <h2>Dr. Moon story</h2>
+                    <ul>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="IR.html">IR</a></li>
+                        <li><a href="History.html">History</a></li>
+                    </ul>
+                </div>
+                <div id="interiorBox">
+                    <h2>installation case</h2>
+                    <ul>
+                        <li><a href="InteriorCommercial.html">Commercial Space</a></li>
+                        <li><a href="InteriorResidentialDress.html">Residential Space</a></li>
+                    </ul>
+                    <h2>style</h2>
+                    <ul>
+                        <li><a href="listModern.html">Modern</a></li>
+                        <li><a href="listArt.html">Art</a></li>
+                        <li><a href="listClassic.html">Classic</a></li>
+                        <li><a href="listUnique.html">Unique</a></li>
+                        <li><a href="listFlower.html">Flower</a></li>
+                    </ul>
+                </div>
+                <div id="serviceBox">
+                    <h3>Service center</h3>
+                    <ul>
+                        <li><a href="QnA.html">1:1 Inquiry Board</a></li>
+                        <li><a href="doorCare.html">Dr. DoorCare</a></li>
+                    </ul>
+                </div>
+                <div id="storeBox">
+                    <h3>store</h3>
+                    <ul>
+                        <li><a href="showRoom.html">Showroom</a></li>
+                        <li><a href="Store.html">Location</a></li>
+                    </ul>
+                </div>
+                <div id="portfolioBox">
+                    <h3>casestudy</h3>
+                    <ul>
+                        <h3>style</h3>
+                        <li><a href="listModern.html">Modern</a></li>
+                        <li><a href="listArt.html">Art</a></li>
+                        <li><a href="listClassic.html">Classic</a></li>
+                        <li><a href="listUnique.html">Unique</a></li>
+                        <li><a href="listFlower.html">Flower</a></li>
+                    </ul>
+                </div>
+                <div id="newsBox">
+                    <h3>News</h3>
+                    <ul>
+                        <li><a href="eventPromotion.html">Event / Promotion</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="customerReview.html">Customer Review</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul>
+                <li>
+                    <a href="mypage.html">Shopping</a>
+                </li>
+                <li><a href="signinmembership.html">login</a></li>
+                <li>
+                    <input type="button" value="Search" data-popup="searchPanel">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- ? header Fin -->
+<h1>MEMBERSHIP</h1>
+<ul>
+    <li><img src="images/signupTermsIcon-dg.png" alt=""><span>Terms</span></li>
+    <li><img src="images/signupInfoIcon-dg.png" alt=""><span>Information</span></li>
+    <li><img src="images/signupCompleteIcon-dg.png" alt=""><span>Complete</span></li>
+</ul>
+
+    
+<form>
+    <legend>Terms and Condition</legend>
+    <fieldset>
+        <div class="all_agree">
+            <input type="checkbox" id="agree_all">
+            <label for="agree_all">Agree to all terms and conditions</label>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="tnc">
+                <label for="tnc">[Required] I agree to the Terms of Use.</label>
+                <a href="">VIEW MORE &gl;</a>
+            </li>
+            <li>
+                <input type="checkbox" id="tnc2">
+                <label for="tnc2">[Required] I agree to the collection and use of personal information.</label>
+                <a href="">VIEW MORE &gl;</a>
+            </li>
+        </ul>
+    </fieldset>
+    <legend>Choose your authentication method</legend>
+    <fieldset>
+        
+        <ul>
+            <li>
+                <img src="images/guidemobileIcon.png" alt="">
+                <span>Mobile</span>
+            </li>
+            <li>
+                <input type="checkbox" id="tnc3">
+                <label for="tnc3">mobile phone authentication</label>
+                <small>The information provided during identity verification is not used or stored for any purpose other than verification.</small>
+            </li>
+        </ul>
+    </fieldset>
+
+</form>
+
+    
+    <footer>
+        <div>
+            <ul>
+                <li><a href="terms-and-condition02.html"> personal protection policy</a></li>
+                <li><a href="terms-and-condition02.html">user guide</a></li>
+                <li><a href="terms-and-condition02.html">terms and conditions</a></li>
+            </ul>
+            <span>
+                <b>account information : 1005-903-070171</b>
+                <a href="tel:+8215773195">customer center : 1577-3195</a>
+            </span>
+        </div>
+        <div>
+            <h2><img src="images/Settings.pngimages/settingfooter-ddLogo.png" alt="DR.moon"></h2>
+            <span>
+                <a href="https://pf.kakao.com/_FxePnu">kakaotalk</a>
+                <a
+                    href="https://talk.naver.com/WCCFOF?ref='+encodeURIComponent(location.href), 'talktalk', 'width=471, height=640">talktalk</a>
+                <a href="https://www.instagram.com/doordoc.kr/">instagram</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
