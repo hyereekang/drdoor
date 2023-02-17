@@ -1,12 +1,29 @@
-const button = document.querySelector('input');
-const div = document.querySelector('id');
 
-button.addEventListener('click',closePanel);
+$(document).ready(function(){
+	$('.bxslider').bxSlider({
+		auto: true,
+		speed: 500,
+		pause: 4000,
+		mode:'fade',
+		autoControls: true,
+		pager:true,
+	});
+});
 
-function closePanel(){
- div#
-    if (button.value ===)
+$(document).ready(function(){
+    $("#shoppingcart").click(textChange);
+    $(".btn_close").click(test);
+});
+
+function textChange(){
+    $("#searchPanel").css({
+        "right" : "0%",
+        "background-color" : "green",
+        "font-weight" : "bold"
+    });
 }
-
-$( "section" ).data( "test", { first } );
-$( "ul" ).first().text( $( "[data-category=ENTRANCE]" ).data( "test" ).first );
+function test(){
+    $("#searchPanel").css({
+        "right" : "-50%"
+    });
+}
